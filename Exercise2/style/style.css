@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
+
+
+header {
+    background-color: rgb(105,21,37);
+}
+
+header img {  
+    width: 40em;
+    margin-top:1em;
+    margin-left:35%;
+    text-align: center;
+}
+
+header li{
+    list-style: none; 
+    float:left;
+    padding: 1em;  
+}
+
+header li+li{
+    border-left:2px solid;
+    border-color: white;
+}
+
+header ul{
+    padding-bottom:4.2em;
+    margin-left:35%;
+
+}
+
+header a {
+    font-family: "Varela Round";
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;   
+    font-weight: 100;
+}
+
+header a:hover {
+    color: rgb(25,202,253);
+    transition: 0.3s;
+}
+
+header a:active {
+    color: rgb(26, 189, 234);
+    transition: 0.3s;
+}
+
+
+
+
+
+
