@@ -2,40 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
 
 
+body {
+    font-family: sans-serif;
+    margin: 0px;                /* remove extra space */
+}
+
+/*---------------------- HEADER ---------------------- */
+
 header {
-    background-color: rgb(105,21,37);
+    background-color: #61111f;
+    width: 100%;
+    position: fixed;
+    top: 0;  
 }
 
 header img {  
-    width: 40em;
-    margin-top:1em;
-    margin-left:35%;
-    text-align: center;
+    display: block;
+    float:left;  
+    width:7em;
+    padding-left:2em;  
+}
+
+header nav {
+    float:left;
+    text-align: center; 
+}
+
+header ul {
+    display: inline-block;  
+    padding-top:2.8em;
 }
 
 header li{
-    list-style: none; 
-    float:left;
-    padding: 1em;  
+    display: inline;
+    float: left;
+    list-style: none;
+    padding: 0.5em 1em 0 1em;
 }
 
 header li+li{
-    border-left:2px solid;
-    border-color: white;
-}
-
-header ul{
-    padding-bottom:4.2em;
-    margin-left:35%;
-
+    border-left:2px solid white;
 }
 
 header a {
-    font-family: "Varela Round";
+    font: bold 1.2em "Varela Round";
+    color: #ffffff;
     text-decoration: none;
-    color: white;
-    font-size: 1.4em;   
-    font-weight: 100;
 }
 
 header a:hover {
@@ -48,8 +60,6 @@ header a:active {
     transition: 0.3s;
 }
 
-
-
-
-
-
+main {
+    margin-top:8em;
+}
