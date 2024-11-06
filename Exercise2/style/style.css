@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manjari:wght@100;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 body {
     font-family: sans-serif;
-    margin: 0px;                /* remove extra space */
+    margin: 0;                /* remove extra space */
+}
+
+main {
+    margin-top:5em;           /* add a little margin to main content*/
 }
 
 /*---------------------- HEADER ---------------------- */
@@ -61,6 +66,182 @@ header a:active {
     transition: 0.3s;
 }
 
-main {
-    margin-top:8em;
+/*---------------------- FOOTER ---------------------- */
+footer {
+    background-color: #61111f;
+    width: 100%;
+    margin-bottom:0;
+    font: 1.0em "Rubik";
+    font-weight: 80;
+    color: #ffffff;
+    text-decoration: none;
 }
+
+footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contact{
+    float: left; 
+    text-align: left;
+    margin-left:2em;
+}
+
+#contact p {
+    margin-bottom: 20px;
+    line-height: 1.6; 
+}
+
+#contact p span {
+    display: block;
+    text-align: center; 
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
+#contact a {
+    display: block;
+    text-decoration: none; 
+    margin-top: 5px; 
+    color: #ffffff;
+}
+
+#contact a img {
+    vertical-align: middle; 
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;  
+}
+
+#partners {
+    margin-left:20em;
+    padding-top:0.8em;
+}
+
+#partners h1{
+    text-decoration: underline;
+    margin-left:6em;
+}
+
+#partners img {
+    width:6em;
+}
+
+#partners a {
+    text-decoration: none;  
+}
+
+#partners + p {
+    text-align: center;
+    padding-top:1.8em;
+}
+
+/*---------------------- MAIN INDEX ---------------------- */
+
+#intro{
+    background-color: #f5f5dc;
+    width:50%;
+    margin-left:25%;
+    padding:2em;
+    margin-top:8em;
+    border:2px solid;
+    border-radius: 10px 100px / 120px;
+    font-family: "Manjari";
+}
+
+#intro h1{
+    text-align: center;
+}
+
+#news {
+    display: inline-block;  
+}
+
+#news h1 {
+    margin-left:1.5em;
+    margin-bottom:0em;
+    font-family: "Roboto Condensed";
+}
+
+.news-article {
+    float:left;
+    font-family: "Manjari";
+    width: 20em;
+    border:1px solid;
+    border-radius: 20px;
+    margin:2em;  
+}
+
+.news-article img{
+    width: 20em;
+    height: 11em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid;
+}
+
+.news-article a {
+    text-decoration: none;
+    color:black;
+}
+
+.news-article a p,.news-article a h3{
+    padding-left:0.2em;
+    margin-top:0.3em;
+}
+
+.news-article:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+}
+
+/*---------------------- MAIN ABOUT US---------------------- */
+
+
+#about-us {
+    display:inline-block;
+    margin-left:25%;
+}
+
+
+#about-us div {      
+    background-color: #f5f5dc;
+    width:47em;
+    padding:1em;
+    margin-top:2em;
+    border:2px solid;
+    border-radius: 10px;
+    font-family: "Manjari";
+}
+
+#about-us div h2{
+    text-align: center;
+
+}
+
+
+#about-us article {
+    background-color: #f5f5dc;
+    float:left;
+    margin:1em;
+    width: 20em;
+    padding: 1em;
+    border: 2px solid black; 
+    border-radius: 10px;
+    font-family: "Manjari";
+    text-align: center; 
+}
+
+
+#about-us img {
+    width: 10em;
+    height: 10em;
+}
+
+
+#about-us p{
+    text-align: left; 
+    line-height: 1.2em;
+}
+
