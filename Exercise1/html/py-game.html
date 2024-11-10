@@ -5,12 +5,17 @@
         <title>Learning Hub | Think Python</title>
         <link href="..\img\logos\logo-icon.png" rel="shortcut icon" type="image/png" />
         <meta charset="utf-8">
+        <style>
+            footer {
+               background-color: gray;
+           }
+       </style>
         
     </head>
 
     <body>
         <header>
-            <img src="..\img\logos\logo.png" alt="Learning Hub">
+            <a href="index.html"><img src="..\img\logos\header-logo.png" alt="Learning Hub"></a>    
             <nav>
                 <ul>
                     <li>
@@ -26,14 +31,13 @@
             </nav>
         </header>
 
-        <main>
-            
+        <main>          
             <section>
                 <a href="python.html">Back To Python Courses</a>
                 <h1>Invent Your Own Computer Games with Python, 4th Edition</h1>
-                <img src="..\img\courses\python\games-python.jpg" width="600px">
+                <img src="..\img\courses\python\games-python.jpg">
                 <p>Al Sweigart</p>
-                <p>Ratings: 4.7⭐ (510) </p>
+                <p>Ratings: 4.7&#9733 (510) </p>
                 <p>Published Date: Dec. 2016</p>
                 <p>
                     Invent Your Own Computer Games with Python teaches you how to program in the Python language.
@@ -43,9 +47,9 @@
                 </p>     
             </section>
 
-            <section id="table-of-content">
+            <section id="table-of-content-py">
                 <h2>Table of Content</h2>
-                <table border="1" cellpadding="8" cellspacing="0">
+                <table cellpadding="8" cellspacing="0">
                     <tr>
                         <th>Chapter</th>
                         <th>Title</th>
@@ -75,23 +79,15 @@
 
             <section id="pychapter1">
                 <h2>1.The Interactive Shell</h2>
-                <table border="1" cellpadding="8" cellspacing="0" >
-                    <tr>
-                        <th>TOPICS COVERED IN THIS CHAPTER</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Operators</li>
-                                <li>Integers and floating-point numbers</li>
-                                <li>Values</li>
-                                <li>Expressions</li>
-                                <li>Syntax errors</li>
-                                <li>Storing values in variables</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <h3>TOPICS COVERED IN THIS CHAPTER</h3>
+                <ul>
+                    <li>Operators</li>
+                    <li>Integers and floating-point numbers</li>
+                    <li>Values</li>
+                    <li>Expressions</li>
+                    <li>Syntax errors</li>
+                    <li>Storing values in variables</li>
+                </ul>
                 <h3>Some Simple Math</h3>
                 <p>
                     Start IDLE by following the steps in “Starting IDLE” on page xxvi. First you’ll
@@ -100,70 +96,58 @@
                     and press ENTER. (On some keyboards, this key is RETURN.) Figure 1-1 shows how 
                     this math problem looks in the interactive shell—notice that it responds with the number 4.
                 </p>
-                <img src="..\\img\courses\python\python-book\py-chapter1.jpeg">
-                <p>Figure 1-1: Entering 2 + 2 into the interactive shell</p>
-                <h3><a href="#table-of-content">Back To Table Of Content</a></h3>
+                <figure>
+                    <img src="..\\img\courses\python\python-book\py-chapter1.jpeg">
+                    <figcaption>Figure 1-1: Entering 2 + 2 into the interactive shell</figcaption>
+                </figure>
+                <h3><a href="#table-of-content-py">Back To Table Of Content</a></h3>
             </section>
 
             <section id="pychapter2">
                 <h2>2.Writing Programs</h2>
-                <table border="1" cellpadding="8" cellspacing="0" >
-                    <tr>
-                        <th>TOPICS COVERED IN THIS CHAPTER</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Strings</li>
-                                <li>String concatenation</li>
-                                <li>Data types (such as strings or integers)</li>
-                                <li>Using the file editor to write programs</li>
-                                <li>Saving and running programs in IDLE</li>
-                                <li>Flow of execution</li>
-                                <li>Comments</li>
-                                <li>The <code>print()</code> function</li>
-                                <li>The <code>input()</code> function</li>
-                                <li>Case sensitivity</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <h3>TOPICS COVERED IN THIS CHAPTER</h3>
+                <ul>
+                    <li>Strings</li>
+                    <li>String concatenation</li>
+                    <li>Data types (such as strings or integers)</li>
+                    <li>Using the file editor to write programs</li>
+                    <li>Saving and running programs in IDLE</li>
+                    <li>Flow of execution</li>
+                    <li>Comments</li>
+                    <li>The <code>print()</code> function</li>
+                    <li>The <code>input()</code> function</li>
+                    <li>Case sensitivity</li>
+                </ul>
                 <h3>Saving Your Program</h3>
                 <p>
                     Once you’ve entered your source code, save it by clicking File image Save As. 
                     Or press CTRL-S to save with a keyboard shortcut. Figure 2-4 shows the Save As
                     window that will open. Enter hello.py in the File name text field and then click Save.
                 </p>
-                <img src="..\\img\courses\python\python-book\py-chapter2.jpeg">
-                <p>Figure 2-4: Saving the program</p>
-                <h3><a href="#table-of-content">Back To Table Of Content</a></h3>
+                <figure>
+                    <img src="..\\img\courses\python\python-book\py-chapter2.jpeg">
+                    <figcaption>Figure 2-4: Saving the program</figcaption>
+                </figure>
+                <h3><a href="#table-of-content-py">Back To Table Of Content</a></h3>
             </section>
 
             <section id="pychapter3">
                 <h2>3.Guess The Number</h2>
-                <table border="1" cellpadding="8" cellspacing="0" >
-                    <tr>
-                        <th>TOPICS COVERED IN THIS CHAPTER</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>import statements</li>
-                                <li>Modules</li>
-                                <li>The <code>randint()</code> function</li>
-                                <li><code>for</code> statements</li>
-                                <li>Blocks</li>
-                                <li>The <code>str()</code>, <code>int()</code>, and <code>float()</code> functions</li>
-                                <li>Booleans</li>
-                                <li>Comparison operators</li>
-                                <li>Conditions</li>
-                                <li>The difference between <code>=</code> and <code>==</code></li>
-                                <li><code>if</code> statements</li>
-                                <li><code>break</code> statements</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <h3>TOPICS COVERED IN THIS CHAPTER</h3>
+                <ul>
+                    <li>import statements</li>
+                    <li>Modules</li>
+                    <li>The <code>randint()</code> function</li>
+                    <li><code>for</code> statements</li>
+                    <li>Blocks</li>
+                    <li>The <code>str()</code>, <code>int()</code>, and <code>float()</code> functions</li>
+                    <li>Booleans</li>
+                    <li>Comparison operators</li>
+                    <li>Conditions</li>
+                    <li>The difference between <code>=</code> and <code>==</code></li>
+                    <li><code>if</code> statements</li>
+                    <li><code>break</code> statements</li>
+                </ul>
                 <h3>Grouping with Blocks</h3>
                 <p>
                     Several lines of code can be grouped together in a block. Every line in a block of code
@@ -175,60 +159,48 @@
                     the block started. There can also be blocks within other blocks. Figure 3-1 shows a code diagram
                     with the blocks outlined and numbered.
                 </p>
-                <img src="..\\img\courses\python\python-book\py-chapter3.jpeg">
-                <p>Figure 3-1: An example of blocks and their indentation. The gray dots represent spaces.</p>
-                <h3><a href="#table-of-content">Back To Table Of Content</a></h3>
+                <figure>
+                    <img src="..\\img\courses\python\python-book\py-chapter3.jpeg">
+                    <figcaption>Figure 3-1: An example of blocks and their indentation. The gray dots represent spaces.</figcaption>
+                </figure>
+                <h3><a href="#table-of-content-py">Back To Table Of Content</a></h3>
             </section>
 
             <section id="pychapter4">
                 <h2>4.A Joke-Telling Program</h2>
-                <table border="1" cellpadding="8" cellspacing="0" >
-                    <tr>
-                        <th>TOPICS COVERED IN THIS CHAPTER</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Escape characters</li>
-                                <li>Using single quotes and double quotes for strings</li>
-                                <li>Using <code> print()’s</code> end keyword parameter to skip newlines</li>  
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <h3>TOPICS COVERED IN THIS CHAPTER</h3>
+                <ul>
+                    <li>Escape characters</li>
+                    <li>Using single quotes and double quotes for strings</li>
+                    <li>Using <code> print()’s</code> end keyword parameter to skip newlines</li>  
+                </ul>
                 <h3>Source Code for Jokes</h3>
                 <p>
                     Open a new file editor window by clicking File image New Window. In the blank window that appears, 
                     enter the source code and save it as jokes.py. Then run the program by pressing F5.
                 </p>
-                <img src="..\\img\courses\python\python-book\py-chapter4.png">
-                <p>jokes.py</p>
-                <h3><a href="#table-of-content">Back To Table Of Content</a></h3>
+                <figure>
+                    <img src="..\\img\courses\python\python-book\py-chapter4.png">
+                    <figcaption>jokes.py</figcaption>
+                </figure>
+                <h3><a href="#table-of-content-py">Back To Table Of Content</a></h3>
             </section>
 
             <section id="pychapter5">
                 <h2>5.Dragon Realm</h2>
-                <table border="1" cellpadding="8" cellspacing="0" >
-                    <tr>
-                        <th>TOPICS COVERED IN THIS CHAPTER</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Flowcharts</li>
-                                <li>Creating your own functions with the <code>def</code> keyword</li>
-                                <li>Multiline strings</li>
-                                <li><code>while</code> statements</li>
-                                <li>The <code>and</code>, <code>or</code>, and <code>not</code> Boolean operators</li>
-                                <li>Truth tables</li>
-                                <li>The <code>return</code> keyword</li>
-                                <li>Global and local variable scope</li>
-                                <li>Parameters and arguments</li>
-                                <li>The <code>sleep()</code> function</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                <h3>TOPICS COVERED IN THIS CHAPTER</h3>
+                <ul>
+                    <li>Flowcharts</li>
+                    <li>Creating your own functions with the <code>def</code> keyword</li>
+                    <li>Multiline strings</li>
+                    <li><code>while</code> statements</li>
+                    <li>The <code>and</code>, <code>or</code>, and <code>not</code> Boolean operators</li>
+                    <li>Truth tables</li>
+                    <li>The <code>return</code> keyword</li>
+                    <li>Global and local variable scope</li>
+                    <li>Parameters and arguments</li>
+                    <li>The <code>sleep()</code> function</li>
+                </ul>
                 <h3>Flowchart for Dragon Realm</h3>
                 <p>
                     It often helps to write down everything you want your game or program to do before you start
@@ -238,40 +210,78 @@
                     the game, put your finger on the START box. Then follow one arrow from that box to another box. 
                     Your finger is like the program execution. The program terminates when your finger lands on the END box.
                 </p>
-                <img src="..\\img\courses\python\python-book\py-chapter5.jpeg">
-                <p>Figure 5-1: Flowchart for the Dragon Realm game</p>
-                <h3><a href="#table-of-content">Back To Table Of Content</a></h3>
+                <figure>
+                    <img src="..\\img\courses\python\python-book\py-chapter5.jpeg">
+                    <figcaption>Figure 5-1: Flowchart for the Dragon Realm game</figcaption>
+                </figure>
+                <h3><a href="#table-of-content-py">Back To Table Of Content</a></h3>
             </section>
 
         </main>
 
         <footer>
-            <p>
-                Petridis Giannis
-                <a href="mailto:p3210167@aueb.gr">
-                    <img src="..\\img\logos\mail-logo.png"alt="MailLogo" width="25" height="30">
-                    p3210167@aueb.gr
-                </a>
-                <a href="https://github.com/PetridhsG"> 
-                    <img src="..\\img\logos\github-logo.png"alt="Github Logo" width="25" height="30">
-                    PetridhsG
-                </a>
-            </p>
+            <section>
+                <p>
+                    <span>Petridis Giannis</span>
+                    <a href="mailto:p3210167@aueb.gr">
+                        <img src="..\\img\logos\mail-logo.png"alt="MailLogo">
+                        p3210167@aueb.gr
+                    </a>
+                    <a href="https://github.com/PetridhsG"> 
+                        <img src="..\\img\logos\github-logo.png"alt="Github Logo">
+                        PetridhsG
+                    </a>
+                </p>          
             
-           
-            <p>
-                Kefalas Dimitris
-                <a href="mailto:p3210167@aueb.gr">
-                    <img src="..\\img\logos\mail-logo.png"alt="MailLogo" width="25" height="30">
-                    p3210075@aueb.gr
-                </a>
-                <a href="https://github.com/dimkef29"> 
-                    <img src="..\\img\logos\github-logo.png"alt="Github Logo" width="25" height="30">
-                    dimkef29
-                </a>
-            </p>
+                <p>
+                    <span>Kefalas Dimitris</span>
+                    <a href="mailto:p3210167@aueb.gr">
+                        <img src="..\\img\logos\mail-logo.png"alt="MailLogo" >
+                        p3210075@aueb.gr
+                    </a>
+                    <a href="https://github.com/dimkef29"> 
+                        <img src="..\\img\logos\github-logo.png"alt="Github Logo" >
+                        dimkef29
+                    </a>
+                </p>
+            </section>
 
-            <p>Copyright 2024. All Rights Reserved.</p>
+            <section> 
+                <h1>Partners</h1>
+                <a href="https://www.aueb.gr/"  target="_blank"> 
+                    <img src="..\\img\partners\aueb.png">
+                </a>
+                <a href="https://www.stanford.edu/" target="_blank">
+                    <img src="..\\img\partners\stanford.png">
+                </a>
+                <a href="https://ntua.gr/el/" target="_blank"> 
+                    <img src="..\\img\partners\emp.png">
+                </a>
+                <a href="https://www.mit.edu/" target="_blank"> 
+                    <img src="..\\img\partners\mit.png">
+                </a>
+            </section>
+
+            <section >
+                <h1>Social Media</h1>
+                <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank">
+                    <img src="..\\img\logos\yt.png"alt="yt-logo">
+                </a>
+                <a href="https://x.com/" target="_blank"> 
+                    <img src="..\\img\logos\x.png"alt="x-logo" >
+                </a>
+                <a href="https://www.instagram.com/" target="_blank"> 
+                    <img src="..\\img\logos\insta.png"alt="insta-logo" >
+                </a>
+                <a href="https://www.facebook.com/" target="_blank"> 
+                    <img src="..\\img\logos\fb.png"alt="fb-logo" >
+                </a>
+                <a href="https://discord.com/" target="_blank"> 
+                    <img src="..\\img\logos\disc.png"alt="disc-logo" >
+                </a>         
+            </section>
+
+            <h5>Copyright 2024. All Rights Reserved.</h5>
         </footer>
     </body>
 </html>

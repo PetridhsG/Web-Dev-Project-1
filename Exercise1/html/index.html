@@ -5,12 +5,17 @@
         <title>Learning Hub</title>
         <link href="..\img\logos\logo-icon.png" rel="shortcut icon" type="image/png" />
         <meta charset="utf-8">
+        <style>
+            footer {
+               background-color: gray;
+           }
+       </style>
         
     </head>
 
     <body>
         <header>
-            <img src="..\img\logos\logo.png" alt="Learning Hub" >
+            <a href="index.html"><img src="..\img\logos\header-logo.png" alt="Learning Hub"></a>    
             <nav>
                 <ul>
                     <li>
@@ -28,7 +33,7 @@
 
         <main>
 
-            <section> <!--Intro Section-->
+            <section>
                 <h1>Welcome to Learning Hub!</h1>
                 <p>
                     Welcome to Learning Hub, a dedicated platform for Computer Science students focused on making learning accessible 
@@ -39,101 +44,169 @@
                 </p>
             </section>
 
-            <section> <!--News Section-->
+            <section>
                 <h1>News</h1>
 
                 <article>
-                    <img src="..\\img\news\chatgpt.png" width="400px" > 
-                    <br>
-                    <a href="https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/">
-                        Introducing GPT-4o and more tools to ChatGPT free users
+                    <a href="https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/" target="_blank">
+                        <img src="..\\img\news\chatgpt.png"  > 
+                        <h3>Introducing GPT-4o and more tools to ChatGPT free users</h3>
+                        <p>
+                            GPT-4o is our newest flagship model that provides GPT-4-level intelligence but is
+                            much faster and improves on its capabilities across text, voice, and vision.
+                        </p>
                     </a>
-                    <p>
-                        GPT-4o is our newest flagship model that provides GPT-4-level intelligence but is
-                        much faster and improves on its capabilities across text, voice, and vision.
-                    </p>
+                    
                 </article>
 
                 <article>
-                    <img src="..\\img\news\java.png" width="400px" > 
-                    <br>
-                    <a href="https://www.moneycontrol.com/technology/oracle-releases-latest-version-of-programming-language-java-23-article-12823976.html">
-                        Oracle releases latest version of programming language Java 23
+                    <a href="https://www.moneycontrol.com/technology/oracle-releases-latest-version-of-programming-language-java-23-article-12823976.html" target="_blank">
+                        <img src="..\\img\news\java.png"  > 
+                        <h3>Oracle releases latest version of programming language Java 23 </h3>
+                        <p>
+                            The new update will have 12 enhancement proposals that help developers
+                            increase productivity by improving the Java language.
+                        </p>
                     </a>
-                    <p>
-                        The new update will have 12 enhancement proposals that help developers
-                        increase productivity by improving the Java language.
-                    </p>
                 </article>
 
                 <article>
-                    <img src="..\\img\news\cpp.png" width="400px" > 
-                    <br>
-                    <a href="https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/">
-                        Can becoming a C++ expert ruin your engineering career?
+                    <a href="https://www.efinancialcareers.com/news/can-becoming-a-c-expert-ruin-your-engineering-career" target="_blank">
+                        <img src="..\\img\news\cpp.png" >                        
+                        <h3>Can becoming a C++ expert ruin your engineering career?</h3>
+                        <p>
+                            C++ veterans seem to believe learning C++ has crippled their career prospects.
+                            One engineer said they hate it, and feel like it's a lot of useless knowledge.
+                        </p>
                     </a>
-                    <p>
-                        C++ veterans seem to believe learning C++ has crippled their career prospects.
-                        One engineer said they hate it, and feel like it's a lot of useless knowledge.
-                    </p>
                 </article>
 
                 <article>
-                    <img src="..\\img\news\unreal.png" width="400px" > 
-                    <br>
-                    <a href="https://80.lv/articles/details-on-new-unreal-engine-5-5-s-megalights-revealed/">
-                        Details on New Unreal Engine 5.5's MegaLights Revealed
+                    <a href="https://80.lv/articles/details-on-new-unreal-engine-5-5-s-megalights-revealed/" target="_blank">
+                        <img src="..\\img\news\unreal.png"> 
+                        <h3>Details on New Unreal Engine 5.5's MegaLights Revealed</h3>
+                        <p>
+                            The developers shared documentation for the new Unreal Engine 5.5. lighting feature.
+                            The highlight of the newly released UE 5.5 is the brand-new lighting feature MegaLights.
+                        </p>
                     </a>
-                    <p>
-                        The developers shared documentation for the new Unreal Engine 5.5. lighting feature.
-                    </p>
+                    
                 </article>
+            </section>    
+
+            <section>
+                <h1>Reviews</h1>
+
+                <atricle>
+                    <img src="..\\img\profile-pics\zuck.png">
+                    <h3>Mark Zuckerberg</h3>
+                    <p>
+                        As someone who has experienced the transformative power of computer science, 
+                        I’m excited to see platforms like this empowering students to learn, create, and innovate. 
+                        The future belongs to those who keep learning, and this resource is a great step in that direction.
+                        I am looking forward to watching this amazing team project evolve.
+                    </p>
+                    <p>
+                        &#9733 &#9733 &#9733 &#9733
+                    </p>
+                </atricle>
+
+                <atricle>
+                    <img src="..\\img\profile-pics\leon.png">
+                    <h3>Leon Yohai</h3>
+                    <p>
+                        This platform is an impressive resource for aspiring computer scientists, blending 
+                        theoretical knowledge with practical insights. As an entrepreneur, I know 
+                        that a strong foundation in technology is key to innovation and success. This site 
+                        equips students with the tools and confidence they need to build their future.
+                    </p>
+                    <p>
+                        &#9733 &#9733 &#9733 &#9733 &#9733
+                    </p>
+                </atricle>
+
+                <atricle>
+                    <img src="..\\img\profile-pics\bill.png">
+                    <h3>Bill Gates</h3>
+                    <p>
+                        Education is the foundation for future progress, and empowering students with computer 
+                        science knowledge is more important than ever. This platform stands out as a valuable 
+                        resource for college students eager to learn and make an impact. I’m excited to see how 
+                        this helps inspire the next generation of innovators.
+                    </p>
+                    <p>
+                        &#9733 &#9733 &#9733
+                    </p>
+                </atricle>
             </section>
-
-            <section> <!--Partners Section-->
-                <h1>Partners</h1>
-                <a href="https://www.aueb.gr/"> 
-                    <img src="..\\img\partners\aueb.png" width="400px" >
-                </a>
-                <a href="https://www.stanford.edu/"> 
-                    <img src="..\\img\partners\stanford.png" width="400px" >
-                </a>
-                <a href="https://ntua.gr/el/"> 
-                    <img src="..\\img\partners\emp.png" width="400px" >
-                </a>
-                <a href="https://www.mit.edu/"> 
-                    <img src="..\\img\partners\mit.png" width="400px" >
-                </a>
-            </section>
+           
             
         </main>
 
         <footer>
-            <p>
-                Petridis Giannis
-                <a href="mailto:p3210167@aueb.gr">
-                    <img src="..\\img\logos\mail-logo.png"alt="MailLogo" width="25" height="30">
-                    p3210167@aueb.gr
-                </a>
-                <a href="https://github.com/PetridhsG"> 
-                    <img src="..\\img\logos\github-logo.png"alt="Github Logo" width="25" height="30">
-                    PetridhsG
-                </a>
-            </p>          
-           
-            <p>
-                Kefalas Dimitris
-                <a href="mailto:p3210167@aueb.gr">
-                    <img src="..\\img\logos\mail-logo.png"alt="MailLogo" width="25" height="30">
-                    p3210075@aueb.gr
-                </a>
-                <a href="https://github.com/dimkef29"> 
-                    <img src="..\\img\logos\github-logo.png"alt="Github Logo" width="25" height="30">
-                    dimkef29
-                </a>
-            </p>
+            <section>
+                <p>
+                    <span>Petridis Giannis</span>
+                    <a href="mailto:p3210167@aueb.gr">
+                        <img src="..\\img\logos\mail-logo.png"alt="MailLogo">
+                        p3210167@aueb.gr
+                    </a>
+                    <a href="https://github.com/PetridhsG"> 
+                        <img src="..\\img\logos\github-logo.png"alt="Github Logo" >
+                        PetridhsG
+                    </a>
+                </p>          
+            
+                <p>
+                    <span>Kefalas Dimitris</span>
+                    <a href="mailto:p3210167@aueb.gr">
+                        <img src="..\\img\logos\mail-logo.png"alt="MailLogo" >
+                        p3210075@aueb.gr
+                    </a>
+                    <a href="https://github.com/dimkef29"> 
+                        <img src="..\\img\logos\github-logo.png"alt="Github Logo" >
+                        dimkef29
+                    </a>
+                </p>
+            </section>
 
-            <p>Copyright 2024. All Rights Reserved.</p>
+            <section> 
+                <h1>Partners</h1>
+                <a href="https://www.aueb.gr/"  target="_blank"> 
+                    <img src="..\\img\partners\aueb.png">
+                </a>
+                <a href="https://www.stanford.edu/" target="_blank">
+                    <img src="..\\img\partners\stanford.png">
+                </a>
+                <a href="https://ntua.gr/el/" target="_blank"> 
+                    <img src="..\\img\partners\emp.png">
+                </a>
+                <a href="https://www.mit.edu/" target="_blank"> 
+                    <img src="..\\img\partners\mit.png">
+                </a>
+            </section>
+
+            <section >
+                <h1>Social Media</h1>
+                <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank">
+                    <img src="..\\img\logos\yt.png"alt="yt-logo">
+                </a>
+                <a href="https://x.com/" target="_blank"> 
+                    <img src="..\\img\logos\x.png"alt="x-logo" >
+                </a>
+                <a href="https://www.instagram.com/" target="_blank"> 
+                    <img src="..\\img\logos\insta.png"alt="insta-logo" >
+                </a>
+                <a href="https://www.facebook.com/" target="_blank"> 
+                    <img src="..\\img\logos\fb.png"alt="fb-logo" >
+                </a>
+                <a href="https://discord.com/" target="_blank"> 
+                    <img src="..\\img\logos\disc.png"alt="disc-logo" >
+                </a>         
+            </section>
+
+            <h5>Copyright 2024. All Rights Reserved.</h5>
         </footer>
     </body>
 </html>
+
