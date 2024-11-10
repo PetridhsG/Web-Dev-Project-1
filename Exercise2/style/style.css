@@ -6,19 +6,24 @@
 body {
     font-family: sans-serif;
     margin: 0;                /* remove extra space */
+    background: rgb(86,16,16);
+    background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
 }
 
 main {
     margin-top:5em;           /* add a little margin to main content*/
+    text-align: center;
 }
 
 /*---------------------- HEADER ---------------------- */
 
 header {
-    background-color: #61111f;
+    background: rgb(86,16,16);
+    background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
     width: 100%;
     position: fixed;
     top: 0;  
+    border-bottom: 2px solid black;
 }
 
 header img {  
@@ -26,7 +31,9 @@ header img {
     float:left;  
     width:12em;
     padding-left:2em;
-    padding-top: 1em;  
+    padding-top: 1em; 
+    margin-bottom:0.4em;
+
 }
 
 header nav {
@@ -68,13 +75,27 @@ header a:active {
 
 /*---------------------- FOOTER ---------------------- */
 footer {
-    background-color: #61111f;
+    background: rgb(17,17,17);
+    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(21,21,21,1) 50%, rgba(17,17,17,1) 100%);
     width: 100%;
     margin-bottom:0;
     font: 1.0em "Rubik";
     font-weight: 80;
     color: #ffffff;
     text-decoration: none;
+    text-align: center;
+   
+}
+
+footer h5{
+    padding-top:20em;
+}
+
+footer section {
+    text-align: center;
+    float:left;
+    margin-left:1em;
+    margin-right:15em;
 }
 
 footer::after {
@@ -84,9 +105,9 @@ footer::after {
 }
 
 #contact{
-    float: left; 
+   
     text-align: left;
-    margin-left:2em;
+  
 }
 
 #contact p {
@@ -116,13 +137,13 @@ footer::after {
 }
 
 #partners {
-    margin-left:20em;
+    
     padding-top:0.8em;
 }
 
 #partners h1{
     text-decoration: underline;
-    margin-left:6em;
+    
 }
 
 #partners img {
@@ -136,6 +157,14 @@ footer::after {
 #partners + p {
     text-align: center;
     padding-top:1.8em;
+}
+
+#social-media img{
+    width:2em;
+}
+
+#social-media a {
+    text-decoration: none;
 }
 
 /*---------------------- MAIN INDEX ---------------------- */
@@ -160,12 +189,14 @@ footer::after {
 }
 
 #news h1 {
+    color:white;
     margin-left:1.5em;
     margin-bottom:0em;
     font-family: "Roboto Condensed";
 }
 
 .news-article {
+    background-color: #fffffe;
     float:left;
     font-family: "Manjari";
     width: 20em;
@@ -193,7 +224,27 @@ footer::after {
 }
 
 .news-article:hover{
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px 5px rgba(245,245,220, 0.5); 
+}
+
+#reviews{
+    color:white;
+    text-align: center;
+    display: inline-block;
+}
+
+.review {
+    text-align: center;
+    width:20em;
+    float:left;
+    background-color: transparent;
+    margin:2em;
+    font-family: "Manjari";
+}
+
+.review img{
+    width:10em;
+    border-radius: 100%;
 }
 
 /*---------------------- MAIN ABOUT US---------------------- */
@@ -206,18 +257,16 @@ footer::after {
 
 
 #about-us div {      
-    background-color: #f5f5dc;
+    color:white;
+    text-align: center;
     width:47em;
     padding:1em;
     margin-top:2em;
-    border:2px solid;
-    border-radius: 10px;
     font-family: "Manjari";
 }
 
-#about-us div h2{
+#about-us div p{
     text-align: center;
-
 }
 
 
@@ -232,7 +281,6 @@ footer::after {
     font-family: "Manjari";
     text-align: center; 
 }
-
 
 #about-us img {
     width: 10em;
