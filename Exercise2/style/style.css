@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    margin-top:5em;           /* add a little margin to main content*/
+    margin-top:8em;           /* add a little margin to main content*/
     text-align: center;
 }
 
@@ -27,13 +27,8 @@ header {
 }
 
 header img {  
-    display: block;
-    float:left;  
     width:12em;
-    padding-left:2em;
-    padding-top: 1em; 
-    margin-bottom:0.4em;
-
+    padding: 0.4em 0em 0.2em 1em;
 }
 
 header nav {
@@ -42,12 +37,10 @@ header nav {
 }
 
 header ul {
-    display: inline-block;  
-    padding-top:0.9em;
+    padding-top:1.2em;
 }
 
 header li{
-    display: inline;
     float: left;
     list-style: none;
     padding: 0.5em 1em 0 1em;
@@ -58,9 +51,9 @@ header li+li{
 }
 
 header a {
-    font: bold 1.2em "Varela Round";
     color: #ffffff;
     text-decoration: none;
+    font: bold 1.2em "Varela Round";
 }
 
 header a:hover {
@@ -75,16 +68,22 @@ header a:active {
 
 /*---------------------- FOOTER ---------------------- */
 footer {
-    background: rgb(17,17,17);
     background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgba(21,21,21,1) 50%, rgba(17,17,17,1) 100%);
-    width: 100%;
-    margin-bottom:0;
     font: 1.0em "Rubik";
     font-weight: 80;
     color: #ffffff;
-    text-decoration: none;
     text-align: center;
-   
+}
+
+footer h1{
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 footer h5{
@@ -92,27 +91,17 @@ footer h5{
 }
 
 footer section {
-    text-align: center;
     float:left;
-    margin-left:1em;
-    margin-right:15em;
-}
-
-footer::after {
-    content: "";
-    display: table;
-    clear: both;
+    margin:0 10em 0 1em;
 }
 
 #contact{
-   
-    text-align: left;
-  
+    text-align: left; 
 }
 
 #contact p {
-    margin-bottom: 20px;
-    line-height: 1.6; 
+    margin-bottom: 1em;
+    line-height: 1.6em; 
 }
 
 #contact p span {
@@ -125,47 +114,30 @@ footer::after {
 #contact a {
     display: block;
     text-decoration: none; 
-    margin-top: 5px; 
+    margin-top: 0.2em; 
     color: #ffffff;
 }
 
 #contact a img {
     vertical-align: middle; 
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;  
-}
-
-#partners {
-    
-    padding-top:0.8em;
-}
-
-#partners h1{
-    text-decoration: underline;
-    
+    width: 1.8em;
+    margin-right:0.1em;
 }
 
 #partners img {
-    width:6em;
+    width:8em;
+    margin:0.1em;
 }
 
-#partners a {
-    text-decoration: none;  
-}
-
-#partners + p {
-    text-align: center;
-    padding-top:1.8em;
+#partners a,#social-media a {
+    text-decoration:none;  
 }
 
 #social-media img{
-    width:2em;
+    width:3em;
+    margin:0.1em;
 }
 
-#social-media a {
-    text-decoration: none;
-}
 
 /*---------------------- MAIN INDEX ---------------------- */
 
@@ -174,23 +146,14 @@ footer::after {
     width:50%;
     margin-left:25%;
     padding:2em;
-    margin-top:8em;
-    border:2px solid;
+    border:2px solid black;
     border-radius: 10px 100px / 120px;
     font-family: "Manjari";
 }
 
-#intro h1{
-    text-align: center;
-}
-
-#news {
-    display: inline-block;  
-}
-
-#news h1 {
+#news h1,#reviews h1 {
     color:white;
-    margin-left:1.5em;
+    padding-top: 1em;
     margin-bottom:0em;
     font-family: "Roboto Condensed";
 }
@@ -198,19 +161,22 @@ footer::after {
 .news-article {
     background-color: #fffffe;
     float:left;
-    font-family: "Manjari";
     width: 20em;
-    border:1px solid;
+    border:1px solid black;
     border-radius: 20px;
     margin:2em;  
+    font-family: "Manjari";
+}
+
+.news-article:hover{
+    box-shadow: 0 0 10px 5px rgba(245,245,220, 0.5); 
 }
 
 .news-article img{
-    width: 20em;
-    height: 11em;
+    width: 20em;        
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid black;
 }
 
 .news-article a {
@@ -223,21 +189,15 @@ footer::after {
     margin-top:0.3em;
 }
 
-.news-article:hover{
-    box-shadow: 0 0 10px 5px rgba(245,245,220, 0.5); 
-}
-
 #reviews{
     color:white;
-    text-align: center;
     display: inline-block;
 }
 
 .review {
-    text-align: center;
-    width:20em;
     float:left;
     background-color: transparent;
+    width:20em;
     margin:2em;
     font-family: "Manjari";
 }
@@ -249,16 +209,14 @@ footer::after {
 
 /*---------------------- MAIN ABOUT US---------------------- */
 
-
 #about-us {
     display:inline-block;
-    margin-left:25%;
+    margin:4em 0 0 25%;
+    text-align: center;
 }
-
 
 #about-us div {      
     color:white;
-    text-align: center;
     width:47em;
     padding:1em;
     margin-top:2em;
@@ -269,7 +227,6 @@ footer::after {
     text-align: center;
 }
 
-
 #about-us article {
     background-color: #f5f5dc;
     float:left;
@@ -279,14 +236,11 @@ footer::after {
     border: 2px solid black; 
     border-radius: 10px;
     font-family: "Manjari";
-    text-align: center; 
 }
 
 #about-us img {
     width: 10em;
-    height: 10em;
 }
-
 
 #about-us p{
     text-align: left; 
