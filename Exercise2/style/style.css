@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manjari:wght@100;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
     font-family: sans-serif;
@@ -353,8 +354,7 @@ footer section {
     left: 0;
     background-color: #333;
     padding: 0;
-    margin: 0;
-    
+    margin: 0; 
     border-radius: 5px;
     opacity: 0; 
     transform: translateY(-10px); 
@@ -369,6 +369,7 @@ footer section {
 .course-item ul:hover {
     opacity: 1; 
     transform: translateY(0); 
+    transition: 0.5s;
     visibility: visible;
 }
 
@@ -392,13 +393,225 @@ footer section {
     border-radius: 5px;
 }
 
-#prob-theory-link-underline,#python-link-underline{
+ #probability-theory-link, #python-link{
     text-decoration: underline;
 }
 
 
+/*---------------------- MAIN PROBABILITY-THEORY/PYTHON ---------------------- */
+
+#book-lecture-h1{
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 4em;
+    color: #ffffff;
+    text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
 
 
+.book-lecture-container {
+    color: white;
+}
+
+.book-lecture-container >section> h2 {
+    font-family: "Aleo";
+    font-size: 2em;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.book-lecture-item {
+    display:inline-block;
+    text-align: left;
+    border-bottom: 3px solid rgb(254, 161, 80);
+    border-top: 3px solid rgb(254, 161, 80);
+    border-radius: 0.7em;
+    margin:2em;
+    font-family: "Aleo";    
+}
+
+.book-lecture-item > h3,.book-lecture-item > h5 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.book-lecture-item > h3 {
+    margin-top: 0.5em;
+}
+
+.details-container > p{
+    margin-top:0em;
+   
+}
+
+.details-container > h4 {
+    text-decoration: underline;
+    color: rgb(241, 152, 74);
+}
+
+.book-lecture-item > h5 {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(254, 161, 80);
+    margin-bottom:1em;
+}
+
+.book-lecture-item img{
+    width:20em;
+    margin:0 1em 1em 1em;
+    float:left;
+    border: 3px groove rgb(241, 152, 74);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.book-lecture-item .details-container {
+    width:90%;
+}
+
+.book-lecture-item .details-container p{
+    margin:1;
+}   
+
+.details-container a {
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: underline;
+    color: white;
+    font-style: italic;
+    transition: 0.3s ease-in-out;
+    margin-bottom:1em;
+
+}
+
+.details-container a:hover {
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    color: rgb(241, 152, 74);
+}
 
 
+/*---------------------- MAIN PY-GAME/PROBABILITY-LECTURE ---------------------- */
+
+.return-button {
+    text-decoration: none;
+    border: 4px solid rgb(27, 27, 27);
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    padding: 0.4em;
+    border-radius: 100%;
+    font-size: 2em;
+    transition: background-color 0.4s;
+}
+
+.return-button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.back-to-table-button {
+    text-decoration: none;
+    border: 3px solid rgb(27, 27, 27);
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    margin-top: 100em;
+    padding: 0.4em;
+    font-size: 1em;
+    transition: background-color 0.4s;
+    margin-top: 1em;
+    font-family: "Roboto Condensed";
+}
+
+.back-to-table-button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.book-lecture-intro .book-lecture-item {
+    border: none;
+    color: white;
+}
+
+.book-lecture-chapters-container {
+    text-align:left;
+}
+
+
+#table-of-content tr,td,th {
+    border-bottom: 1px solid #fff; /* Add a border to table headers and cells */
+}
+
+#table-of-content th {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+#table-of-content tr {
+    text-decoration: none;
+}
+
+#table-of-content > h2 {
+    color: rgb(254, 161, 80);
+    text-decoration: underline;
+}
+
+#table-of-content a {
+    text-decoration: none;
+    border-bottom: transparent;
+    color: rgb(25, 202, 253);
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+#table-of-content a:hover {
+    border-bottom: 1.5px solid rgb(25, 202, 253);
+    
+}
+
+#table-of-content td:first-child {
+    border-right:  1px solid #fff;
+}
+
+#table-of-content th:first-child {
+    border-right:  1px solid #fff;
+}
+
+.book-lecture-chapters-container {
+    color:white;
+    font-family: "Nunito";
+    text-align: center;
+
+}
+
+.book-lecture-chapter > h2 {
+    text-decoration: underline;
+}
+
+.book-lecture-chapter > details > summary {
+    font-style: italic;
+    font-family: "Roboto Condensed";
+}
+
+.book-lecture-chapter > details {
+    text-align: center;
+   
+}
+
+.book-lecture-chapter > details > ul {
+    list-style: none;
+}
+
+.book-lecture-chapter  p  {
+    text-align: left;
+    margin-left:1em;
+}
+
+.book-lecture-chapter  > figure > figcaption {
+    font-style: italic;
+}
+
+.book-lecture-chapter iframe {
+    width: 50em;
+    height: 25em;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
