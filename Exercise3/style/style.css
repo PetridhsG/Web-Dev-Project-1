@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&family=Aleo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/*---------------------- ELEMENTS IN EVERY PAGE ---------------------- */
+
+/* Sets styling for the body for every page */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: rgb(86, 57, 16);
+    background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
+}
+
+/* Centers the content within the main container and add a little margin  */
+main {        
+    text-align: center;
+    margin: 8em 1em 1em 1em;
+}
+
+/* Style for every h1 element */
+h1 {
+    overflow: hidden;
+    font-family: "Asap";
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Adds horizontal lines to every h1 element */
+h1::before, h1::after {
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* Adjusts the position of the left line decoration for h1 */
+h1::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+/* Adjusts the position of the right line decoration for h1 */
+h1::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* Styles star ratings with specific color */
+.stars {
+    color: rgb(25,202,253);
+}
+
+/*---------------------- HEADER ---------------------- */
+
+/* Styles the header for every page */
+header {
+    background: rgb(86, 16, 16);
+    background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid white;
+    z-index: 100;
+}
+
+/* Configures the appearance of the logo within the header */
+header img {
+    width: 12em;
+    padding: 0.4em 0em 0.2em 1em;
+}
+
+/* Aligns navigation content in the header */
+header nav {
+    float: right;
+    text-align: center;
+}
+
+/* Adds padding to the top of the navigation list */
+header ul {
+    padding-top: 0.8em;
+}
+
+/* Styles individual list items within the navigation */
+header li {
+    float: left;
+    list-style: none;
+    padding: 0.5em 1em 0 1em;
+}
+
+/* Adds a border between navigation list items */
+header li+li {
+    border-left: 2px solid white;
+}
+
+/* Sets the base style for links in the header */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font: bold 1.2em "Varela Round";
+    transition: 0.3s ease-in-out;
+}
+
+/* Adds hover effect for links */
+header a:hover {
+    color: rgb(25,202,253);
+    transition: 0.3s ease-in-out;
+}
+
+/* Changes link color when clicked */
+header a:active {
+    color: rgb(24, 164, 203);
+    transition: 0.3s ease-in-out;
+}
+
+/*---------------------- FOOTER ---------------------- */
+
+/* Styles the footer for every page */
+footer {
+    background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgb(28, 28, 28) 50%, rgba(17,17,17,1) 100%);
+    font-family: "Rubik";
+    font-weight: 80;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Styles the h2 within the footer */
+footer h2 {
+    font-family: "Rubik";
+    text-align: center;
+    border-bottom: 1px solid;
+    font-size: 1.1em;
+}
+
+/* Clears floats after footer content */
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Adds padding to h5 within the footer */
+footer h5 {
+    padding-top: 20em;
+}
+
+/* Defines the layout and margin for sections within the footer */
+footer section {
+    float: left;
+    margin: 0 10em 0 1em;
+}
+
+/* Styles the contact section for text alignment */
+#contact {
+    text-align: left;
+}
+
+/* Styles the paragraphs within the contact section */
+#contact p {
+    margin-bottom: 1em;
+    line-height: 1.6em;
+}
+
+/* Styles the spans within contact paragraphs */
+#contact p span {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+/* Styles links in the contact section */
+#contact a {
+    display: block;
+    text-decoration: none;
+    margin-top: 0.2em;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+/* Changes link color on hover in the contact section */
+#contact a:hover {
+    color: rgb(25,202,253);
+    transition: 0.3s;
+}
+
+/* Styles images within contact links */
+#contact a img {
+    vertical-align: middle;
+    width: 1.8em;
+    margin-right: 0.1em;
+}
+
+/* Styles partner images for size, margin, and 3D perspective */
+#partners img {
+    width: 5em;
+    margin: 0.1em;
+    transform: perspective(1000px);
+    transition: 0.3s;
+}
+
+/* Adds scaling effect on hover for partner images */
+#partners img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+/* Removes text decoration for partner and social media links */
+#partners a, #social-media a {
+    text-decoration: none;
+}
+
+/* Styles social media images */
+#social-media img {
+    width: 2em;
+    margin: 0.1em;
+    transform: perspective(1000px);
+    transition: 0.3s;
+}
+
+/* Adds scaling effect on hover for social media images */
+#social-media img:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+
+/*---------------------- MAIN INDEX ---------------------- */
+
+/* Styles the introduction section with background, padding, and border */
+#intro {
+    background-color: #f5f5dc;
+    width: 50%;
+    margin-left: 25%;
+    padding: 2em;
+    border: 2px solid black;
+    border-radius: 10px 100px / 120px;
+    font-family: "Manjari";
+}
+
+/* Styles the h2 in the intro section */
+#intro h2 {
+    color: black;
+    font-family: "Asap";
+}
+
+/* Styles individual news article sections with background, borders, and animation */
+.news-article {
+    background-color: #fffffe;
+    float: left;
+    width: 20em;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2em;
+    font-family: "Manjari";
+    transform: perspective(1000px);
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+/* Styles h3 within news articles */
+.news-article h3 {
+    font-family: "Roboto Condensed";
+}
+
+/* Adds hover effect to news articles with shadow and scale */
+.news-article:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+
+/* Configures the images in news articles */
+.news-article img {
+    width: 20em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Styles links within news articles */
+.news-article a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Adds padding and margins to text in links */
+.news-article a p, .news-article a h3 {
+    padding-left: 0.2em;
+    margin-top: 0.3em;
+}
+
+/* Styles the trust-us section with color and display settings */
+#trust-us {
+    color: white;
+    display: inline-block;
+    width: fit-content;
+    margin: 1em;
+    font-family: "Manjari";
+}
+
+/* Styles the h1 within the trust-us section */
+#trust-us h1 {
+    font-family: "Asap";
+}
+
+/* Styles the reviews container with color and display type */
+#reviews {
+    color: white;
+    display: inline-block;
+}
+
+/* Styles individual review sections */
+.review {
+    float: left;
+    background-color: transparent;
+    width: 20em;
+    margin: 2em;
+    font-family: "Manjari";
+    margin-left: 3em;
+}
+
+/* Configures images in reviews */
+.review img {
+    width: 10em;
+    border-radius: 100%;
+    border: 0.15em solid rgb(25,202,253);
+}
+
+/* Styles the h3 in reviews */
+.review h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Styles the h5 in reviews */
+.review h5 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 0.7em;
+    text-decoration: underline;
+}
+
+/* Styles paragraphs in reviews with adjusted font weight */
+.review p {
+    font-weight: 110;
+}
+
+/*---------------------- MAIN ABOUT US---------------------- */
+
+/* Styles the 'about-us' section for layout and alignment */
+#about-us {
+    display: inline-block;
+    margin: 4em 0 0 25%;
+    text-align: center;
+}
+
+/* Styles the div within 'about-us' for color, width, and padding */
+#about-us div {
+    color: white;
+    width: 47em;
+    padding: 1em;
+    margin-top: 2em;
+    font-family: "Manjari";
+}
+
+/* Underlines the h2 in 'about-us' */
+#about-us h2 {
+    text-decoration: underline;
+}
+
+/* Centers the text within 'about-us' paragraphs */
+#about-us div p {
+    text-align: center;
+}
+
+/* Styles articles within 'about-us' for background, size, and border */
+#about-us article {
+    background-color: #f5f5dc;
+    float: left;
+    margin: 1em;
+    width: 20em;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: "Asap";
+}
+
+/* Configures the images within 'about-us' for consistent width */
+#about-us img {
+    width: 10em;
+}
+
+/* Styles general paragraphs in 'about-us' for alignment and line spacing */
+#about-us p {
+    text-align: left;
+    line-height: 1.2em;
+}
+
+/*---------------------- MAIN CATEGORIES---------------------- */
+
+/* Styles the courses container for display type and bottom margin */
+#courses-container {
+    display: inline-block;
+    margin-bottom: 12em;
+}
+
+/* Configures images within the courses container for size, transition, and opacity */
+#courses-container img {
+    width: 15em;
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+/* Adds hover effect for images in the courses container */
+#courses-container img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    opacity: 1;
+}
+
+/* Styles the unordered list within the courses container */
+#courses-container > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles individual course items for text alignment and layout */
+.course-item {
+    text-align: left;
+    float: left;
+    margin: 2em;
+    position: relative;
+}
+
+/* Styles the nested list within course items for dropdown functionality */
+.course-item > ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+    z-index: 1;
+    min-width: 12em;
+    border: 3px solid #1b1b1b;
+}
+
+/* Shows the dropdown list on hover */
+.course-item:hover > ul,
+.course-item ul:hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+    visibility: visible;
+}
+
+/* Styles individual list items within the course dropdown */
+.course-item ul > li {
+    padding: 0.3em;
+    padding-left: 0.8em;
+}
+
+/* Styles links within the course dropdown */
+.course-item ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-family: "Manjari";
+    display: block;
+    padding: 0.5em 0;
+    font-size: 1em;
+}
+
+/* Changes the background color on hover for course list items */
+.course-item > ul > li:hover {
+    background-color: #2a2a2a;
+    transition: background-color 0.2s ease-in;
+}
+
+/* Highlights specific course links with color and font style */
+#probability-theory-link, #python-link {
+    color: rgb(25,202,253);
+    font-style: italic;
+}
+
+/*---------------------- MAIN PROBABILITY-THEORY/PYTHON ---------------------- */
+
+/* Styles the book-lecture-container to have white text */
+.book-lecture-container {
+    color: white;
+}
+
+/* Styles the h2 in the section of the book-lecture-container */
+.book-lecture-container > section > h2 {
+    font-family: "Manjari";
+    font-size: 1.5em;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+/* Styles individual book-lecture-items with border, layout, and font */
+.book-lecture-item {
+    display: inline-block;
+    text-align: left;
+    border-bottom: 3px solid rgb(25,202,253);
+    border-top: 3px solid rgb(25,202,253);
+    border-radius: 0.3em;
+    margin: 2em;
+    font-family: "Aleo";
+}
+
+/* Styles headings h3 and h5 inside book-lecture-items */
+.book-lecture-item > h3, .book-lecture-item > h5 {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Adds spacing to h3 inside book-lecture-items */
+.book-lecture-item > h3 {
+    margin-top: 0.5em;
+}
+
+/* Styles h5 with a specific font size and color in book-lecture-items */
+.book-lecture-item > h5 {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(25,202,253);
+    margin-bottom: 1em;
+}
+
+/* Styles images within the book-lecture-items */
+.book-lecture-item img {
+    width: 20em;
+    margin: 0 1em 1em 1em;
+    float: left;
+    border: 3px solid rgb(25,202,253);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles the details-container inside book-lecture-items */
+.book-lecture-item .details-container {
+    width: 90%;
+}
+
+/* Adds margin to paragraphs inside the details-container */
+.book-lecture-item .details-container p {
+    margin: 1em;
+}
+
+/* Styles paragraphs inside the details container */
+.details-container > p {
+    margin-top: 0em;
+}
+
+/* Styles links inside the details-container */
+.details-container a {
+    font-family: "Manjari";
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #1b1b1b;
+    background-color: #333;
+    padding: 0.5em;
+    color: white;
+    font-style: italic;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 1em;
+}
+
+/* Adds hover effect to the links in the details-container */
+.details-container a:hover {
+    background-color: #515151;
+    transition: 0.3s ease-in-out;
+}
+
+/*---------------------- MAIN PY-GAME/PROBABILITY-LECTURE ---------------------- */
+
+/* Styles the return-button */
+.return-button {
+    font-family: "Asap";
+    text-decoration: none;
+    border: 3px solid #1b1b1b;
+    background-color: #333;
+    color: #fff;
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+    font-size: 2em;
+    transition: background-color 0.4s;
+}
+
+/* Hover effect for the return-button */
+.return-button:hover {
+    background-color: #515151;
+}
+
+/* Styles the back-to-table-button */
+.back-to-table-button {
+    display: block;
+    width: 12em;
+    text-decoration: none;
+    border: 3px solid #1b1b1b;
+    background-color: #333;
+    color: #fff;
+    padding: 0.4em;
+    font-size: 1em;
+    transition: background-color 0.4s;
+    margin-top: 1em;
+    font-family: "Asap";
+    margin-left: 50em;
+}
+
+/* Hover effect for the back-to-table-button */
+.back-to-table-button:hover {
+    background-color: #515151;
+}
+
+/* Removes border and colors for book-lecture-items in the intro section */
+.book-lecture-intro .book-lecture-item {
+    border: none;
+    color: white;
+}
+
+/* Styles the chapters-container with specific font and alignment */
+.book-lecture-chapters-container {
+    color: white;
+    font-family: "Nunito";
+    text-align: center;
+}
+
+/* Styles the table-of-content with borders and alignment */
+#table-of-content tr, td, th {
+    border-bottom: 1px solid #fff; 
+}
+
+/* Styles table header (th) in the table-of-content */
+#table-of-content th {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ensures table rows (tr) in the table-of-content have no text decoration */
+#table-of-content tr {
+    text-decoration: none;
+}
+
+
+/* Styles links in the table-of-content */
+#table-of-content a {
+    text-decoration: none;
+    border-bottom: transparent;
+    color: rgb(25,202,253);
+}
+
+/* Hover effect for links in the table-of-content */
+#table-of-content a:hover {
+    text-decoration: underline;
+}
+
+/* Adds right border to first column of table-of-content */
+#table-of-content td:first-child {
+    border-right: 1px solid #fff;
+}
+
+#table-of-content th:first-child {
+    border-right: 1px solid #fff;
+}
+
+/* Styles h2 in book-lecture-chapter */
+.book-lecture-chapter > h2 {
+    font-style: italic;
+    color: rgb(25,202,253);
+}
+
+/* Styles summary in details inside book-lecture-chapter */
+.book-lecture-chapter > details > summary {
+    font-style: italic;
+    font-family: "Roboto Condensed";
+    text-decoration: underline;
+}
+
+/* Aligns text in details inside book-lecture-chapter */
+.book-lecture-chapter > details {
+    text-align: center;
+}
+
+/* Styles list inside details in book-lecture-chapter */
+.book-lecture-chapter > details > ul {
+    display: block;
+    list-style: none;
+    font-family: "Roboto Condensed";
+}
+
+/* Styles individual list items inside details in book-lecture-chapters */
+.book-lecture-chapter > details > ul > li {
+    display: inline-block;
+    margin-right: 0.5em;
+    font-family: "Nunito";
+    color: rgb(25,202,253);
+}
+
+/* Adds separator after list items inside details */
+.book-lecture-chapter > details > ul > li::after {
+    content: ', '; 
+}
+
+/* Removes separator for the last list item inside details */
+.book-lecture-chapter > details > ul > li:last-child::after {
+    content: ''; 
+}
+
+/* Aligns paragraphs to the left within book-lecture-chapter */
+.book-lecture-chapter p {
+    text-align: left;
+    margin-left: 1em;
+}
+
+/* Styles figure captions in book-lecture-chapters */
+.book-lecture-chapter > figure > figcaption {
+    font-style: italic;
+}
+
+/* Styles iframes in book-lecture-chapter */
+.book-lecture-chapter iframe {
+    display: block;
+    width: 40em;
+    height: 20em;
+    align-self: center;
+    margin-left: 32%; /* Centers iframe horizontally */
+    border: 2px solid rgb(25,202,253);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles h2 in book-lecture-chapter with specific font and shadow effects */
+.book-lecture-chapter > h2 {
+    overflow: hidden; 
+    font-family: "Asap";
+    font-size: 1.5em;
+    color: rgb(25,202,253);
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Adds before and after elements to h2 for decoration in book-lecture-chapter */
+.book-lecture-chapter > h2::before, .book-lecture-chapter > h2::after {
+    background-color: rgb(25,202,253);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* Adjusts the position of the before pseudo-element */
+.book-lecture-chapter > h2::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+/* Adjusts the position of the after pseudo-element */
+.book-lecture-chapter > h2::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+
+
