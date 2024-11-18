@@ -275,9 +275,9 @@ footer section {
 /* Configures the images in news articles */
 .news-article img {
     width: 20em;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: 1px solid black;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom: 1.5px solid black;
 }
 
 /* Styles links within news articles */
