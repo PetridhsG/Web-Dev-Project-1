@@ -31,7 +31,7 @@ main {
 
 /* Styles for all h1 elements */
 h1 {
-    text-align: left;
+    text-align: center;
     overflow: hidden;
     font-family: "Asap";
     font-size: 2.5em;
@@ -41,11 +41,22 @@ h1 {
 }
 
 /* Styles for the horizontal line after each h1 element */
-h1::after {
-    background-color: #ffffff;
+h1::before {
+    background: rgb(86, 16, 16);
     content: "";
     display: inline-block;
-    height: 2px;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Styles for the horizontal line after each h1 element */
+h1::after {
+    background: rgb(86, 16, 16);
+    content: "";
+    display: inline-block;
+    height: 5px;
     position: relative;
     vertical-align: middle;
     width: 100%;
