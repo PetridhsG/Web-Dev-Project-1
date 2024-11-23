@@ -12,36 +12,14 @@ body {
 }
 
 body > * {
-    grid-column: col-start / span 12;
+    grid-column: 1/-1;
 }
 
-header {
-    grid-column: col-start / span 12;
-    grid-row:1;
-}
-
-/* Centers content within the main section */
-main {     
-    grid-column: col-start 2 / span 9;
-    grid-row:2;
+main {
     text-align: center;
     margin: 2em 1em 1em 1em;
 }
 
-nav {
-    grid-column: col-start / span 1;
-    grid-row:2; 
-}
-
-aside {
-    grid-column: col-start 11 / span 2;
-    grid-row:2;
-}
-
-footer{
-    grid-column: col-start / span 12;
-    grid-row:3;
-}
 
 /* Flex container to center its child elements */
 .center-content {
@@ -90,6 +68,8 @@ h1::after {
     color: rgb(25,202,253);
 }
 
+
+
 /*---------------------- HEADER ---------------------- */
 
 /* Styles the header for every page */
@@ -110,16 +90,15 @@ header img {
 
 /* Styles the navigation area within the header */
 nav {
-    padding-top: 10em;
-    border-right: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 /* Styles the unordered list inside the navigation */
 nav ul {
     padding-left: 0.2em;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Styles individual list items in the navigation */
@@ -154,7 +133,6 @@ nav a:active {
 /*---------------------- ASIDE ---------------------- */
 
 aside {
-    border-left: 1px solid white;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +142,6 @@ aside {
 
 aside > form {
     margin-top: 2em;
-    margin-left: 1em;
     text-align: center;
 }
 
@@ -175,6 +152,7 @@ aside >form >label {
 }
 
 aside >form >input {
+    max-width: 80%;
     padding:0.2em;
     margin-top: 0.4em;
     border: 1px solid transparent;
@@ -231,15 +209,17 @@ aside > a > img {
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes inline block spacing issues */
     margin-left:0.2em;
+    width:95%;
 }
 
 /*---------------------- FOOTER ---------------------- */
 
 /* Styles the footer for every page */
 footer {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "footer-contact footer-partners footer-media ";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgb(28, 28, 28) 50%, rgba(17,17,17,1) 100%);
     font-family: "Rubik";
     font-weight: 80;
@@ -277,7 +257,6 @@ footer h5 {
 
 /* Styles paragraphs within the footer */
 footer p {
-    border-right: 1px solid #5f5f5f;
     border-bottom: 1px solid #5f5f5f;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
@@ -290,10 +269,8 @@ footer section {
 
 /* Styles the contact section within the footer */
 #contact {
-    grid-area: footer-contact;
     display: flex;
     flex-direction: column;
-    justify-self: start;
 }
 
 /* Styles paragraphs within the contact section */
@@ -325,18 +302,13 @@ footer section {
     margin-right: 0.2em;
 }
 
-/* Styles the partners section within the footer */
-#partners {
-    grid-area: footer-partners;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 /* Styles the container for partner logos */
 #partners #partners-logos {
     display: flex;
     flex-flow: row wrap;
+    
 }
 
 /* Styles partner images for size and margin */
@@ -360,11 +332,10 @@ footer section {
 
 /* Styles the social media section within the footer */
 #social-media {
-    grid-area: footer-media;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-self: end;
+   
 }
 
 /* Styles the container for social media logos */
@@ -390,7 +361,7 @@ footer section {
 /* Styles the h5 element within the social media section */
 #social-media h5 {
     align-self: flex-end;
-    margin-top: auto;
+    margin-top: 1em;
 }
 
 /*---------------------- MAIN INDEX ---------------------- */
@@ -402,7 +373,7 @@ footer section {
     flex-direction: column;
     align-items: center;
     background-color: #f5f5dc;
-    width: 50%;
+    width: 80%;
     padding: 2em;
     border: 2px solid black;
     border-radius: 10px 100px / 120px;
@@ -477,7 +448,7 @@ footer section {
 /* Styles the trust-us section */
 #trust-us {
     color: white;
-    text-align: left;
+    text-align: center;
     width: fit-content;
     margin: 1em;
     font-family: "Manjari";
@@ -553,6 +524,7 @@ footer section {
 
 /* Underlines the h2 element within 'about-us' */
 #about-us h2 {
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -693,6 +665,7 @@ footer section {
 
 /* Styles the h2 in the section of the book-lecture-container */
 .book-lecture-container > section > h2 {
+    text-align: center;
     font-family: "Manjari";
     font-size: 1.5em;
     margin-bottom: 0;
@@ -702,7 +675,8 @@ footer section {
 /* Styles individual book-lecture-items with border, layout, and font */
 .book-lecture-item {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     gap:1em;
     border-bottom: 3px solid rgb(25,202,253);
     border-top: 3px solid rgb(25,202,253);
@@ -734,7 +708,7 @@ footer section {
 
 /* Styles images within the book-lecture-items */
 .book-lecture-item img {
-    width: 20em;
+    width: 10em;
     margin: 1em 1em 1em 1em;
     border: 3px solid rgb(25,202,253);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
@@ -754,18 +728,20 @@ footer section {
 .details-container {
     display:flex;
     flex-direction: column;
+    align-items: center;
     
 }
 
 /* Styles links inside the details-container */
 .details-container >a {
     width:7em;
+    text-align: center;
     font-family: "Manjari";
     text-decoration: none;
     border: 3px solid #1b1b1b;
     background-color: #333;
     margin: 0.5em 0em 1.5em 0.4em;
-    padding: 0.5em;
+    padding: 0.5em ;
     color: white;
     font-style: italic;
     transition: 0.3s ease-in-out;
@@ -790,9 +766,10 @@ footer section {
     transition: background-color 0.4s;
 }
 
+
 /* Styles the back-to-table-button parent container */
 .back-to-table-button {
-   align-self: center;
+    align-self: center;
     width: 12em;
     text-decoration: none;
     border: 3px solid #1b1b1b;
@@ -899,6 +876,10 @@ footer section {
     margin-left: 1em;
 }
 
+.book-lecture-chapter > figure > img {
+    border: 2px solid rgb(25,202,253);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 /* Styles figure captions in book-lecture-chapter parent */
 .book-lecture-chapter > figure > figcaption {
     font-style: italic;
@@ -908,8 +889,8 @@ footer section {
 .book-lecture-chapter iframe { 
     margin: 1em;
     padding: 0;
-    width: 40em;
-    height: 20em;
+    width: 25em;
+    height: 12.5em;
     box-sizing: border-box;
     border: 2px solid rgb(25,202,253);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -923,7 +904,7 @@ footer section {
 
 /* Styles the h2 element within book-lecture-chapter parent */
 .book-lecture-chapter > h2 {
-    width: 100%;
+    width: 50%;
     font-family: "Asap";
     font-size: 1.5em;
     color: white;
@@ -933,3 +914,163 @@ footer section {
 }
 
 
+/*---------------------- TABLET ----------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+    body > * {
+        grid-column: col-start / span 12;
+    }
+    
+    header {
+        grid-column: col-start / span 12;
+        grid-row:1;
+    }
+
+    nav {
+        grid-column: col-start 1/ span 3;
+        grid-row:2;   
+        border-right:1px solid white;
+    }
+
+    aside {
+        grid-column: col-start 1 / span 3;
+        grid-row:3;
+        border-right:1px solid white;
+    }
+    
+    /* Centers content within the main section */
+    main {     
+        grid-column: col-start 4 / span 9;
+        grid-row: 2/4;    
+    }
+    
+    footer{
+        grid-column: col-start / span 12;
+        grid-row:4;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact #contact-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact #contact-info .contact-info-item {
+        margin:1em;
+    }
+}
+
+/*---------------------- DESKTOP ----------------------*/
+@media (min-width: 769px) {
+    body > * {
+        grid-column: col-start / span 12;
+    }
+    
+    header {
+        grid-column: col-start / span 12;
+        grid-row:1;
+    }
+    
+    /* Centers content within the main section */
+    main {     
+        grid-column: col-start 2 / span 9;
+        grid-row:2;
+    }
+    
+    nav {
+        grid-column: col-start / span 1;
+        grid-row:2; 
+        border-bottom:none;
+    }
+    
+    aside {
+        grid-column: col-start 11 / span 2;
+        grid-row:2;
+    }
+    
+    footer{
+        grid-column: col-start / span 12;
+        grid-row:3;
+    }
+    
+
+    nav ul {
+        padding-left: 0.2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    nav {
+        padding-top: 10em;
+        border-right: 1px solid white;
+    }
+    
+    aside {
+        border-left: 1px solid white;
+    }
+
+    #intro{
+        width: 50%;
+    }
+
+    #trust-us{
+        text-align: left;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #partners {
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #social-media {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: end;
+    }
+
+    #social-media h5{
+        margin-top:12em;
+    }
+
+    footer { 
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .book-lecture-item {
+        flex-direction: row;
+       
+    }
+
+    .details-container {
+        display:flex;
+    
+        align-items: left;
+        
+    }
+
+   
+    
+}
