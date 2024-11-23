@@ -1,24 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&family=Aleo:ital,wght@0,100..900;1,100..900&family=Asap:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 /*---------------------- ELEMENTS IN EVERY PAGE ---------------------- */
 
 /* Sets up grid layout for the entire page */
 body {
     display: grid;
-    grid: "header"
-          "main"
-          "footer";
+    grid-template-columns: repeat(12, [col-start] 1fr);
     font-family: sans-serif;
     margin: 0;
     background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
 }
 
+body > * {
+    grid-column: col-start / span 12;
+}
+
+header {
+    grid-column: col-start / span 12;
+    grid-row:1;
+}
+
 /* Centers content within the main section */
 main {     
-    grid-area: main;
+    grid-column: col-start 2 / span 9;
+    grid-row:2;
     text-align: center;
-    margin: 8em 1em 1em 1em;
+    margin: 2em 1em 1em 1em;
+}
+
+nav {
+    grid-column: col-start / span 1;
+    grid-row:2; 
+}
+
+aside {
+    grid-column: col-start 11 / span 2;
+    grid-row:2;
+}
+
+footer{
+    grid-column: col-start / span 12;
+    grid-row:3;
 }
 
 /* Flex container to center its child elements */
@@ -31,7 +53,8 @@ main {
 
 /* Styles for all h1 elements */
 h1 {
-    text-align: left;
+    margin-top: 0.2em;
+    text-align: center;
     overflow: hidden;
     font-family: "Asap";
     font-size: 2.5em;
@@ -60,54 +83,43 @@ h1::after {
 
 /* Styles the header for every page */
 header {
-    display: grid;
-    grid-template-areas: "header-logo header-nav";
-    grid-template-columns: auto 1fr;
     background: rgb(86, 16, 16);
     background: linear-gradient(90deg, rgba(86,16,16,1) 0%, rgba(117,24,24,1) 50%, rgba(86,16,16,1) 100%);
     width: 100%;
-    position: fixed;
-    top: 0;
     border-bottom: 1px solid white;
-    z-index: 100;
-}
-
-/* Styles the logo area within the header */
-header #header-logo {
-    grid-area: header-logo;
 }
 
 /* Styles the logo image within the header */
 header img {
-    width: 12em;
+    width: 20em;
     padding: 0.4em 0em 0.2em 1em;
 }
 
+/*---------------------- NAV ---------------------- */
+
 /* Styles the navigation area within the header */
-header nav {
-    grid-area: header-nav;
+nav {
+    padding-top: 10em;
+    border-right: 1px solid white;
 }
 
 /* Styles the unordered list inside the navigation */
-header nav ul {
+nav ul {
+    padding-left: 0.2em;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
 /* Styles individual list items in the navigation */
-header li {
-    padding: 1.2em 0.8em 0.8em 0.8em;
+nav ul li {
+    padding: 1.2em 0.8em 0.8em 1em;
     list-style: none;
 }
 
-/* Adds a border between adjacent list items in the navigation */
-header li+li {
-    border-left: 2px solid white;
-}
 
 /* Styles the links within the header */
-header a {
+nav a {
     color: #ffffff;
     text-decoration: none;
     font: bold 1.2em "Varela Round";
@@ -116,25 +128,107 @@ header a {
 }
 
 /* Adds a hover effect to links in the header */
-header a:hover {
+nav a:hover {
     color: rgb(25,202,253);
     transition: 0.3s ease-in-out;
 }
 
 /* Styles links when clicked (active state) */
-header a:active {
+nav a:active {
     color: rgb(24, 164, 203);
     transition: 0.3s ease-in-out;
+}
+
+
+/*---------------------- ASIDE ---------------------- */
+
+aside {
+    border-left: 1px solid white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Varela Round";
+    color: white;
+}
+
+aside > form {
+    margin-top: 2em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+aside >form >label {
+    font-size: 1em;
+    font-weight: bolder;  
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+aside >form >input {
+    padding:0.2em;
+    margin-top: 0.4em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+aside >button {
+    font-family: "Varela Round";
+    margin: 0.2em;
+    padding: 0.5em;
+    background-color: #f5f5dc;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    cursor: pointer;
+}
+  
+aside >button:hover {
+    background-color: rgb(25,202,253);
+    transition: 0.3s ease-in;
+}
+
+aside > h3 {
+    text-align: center;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    margin-bottom: 0.1em;
+}
+
+aside #contact-us-btn { 
+    text-align: center;
+    font-size: 0.8em;
+    border: 1px solid transparent;
+    background-color: #f5f5dc;
+    border-radius: 50px;
+    padding: 0.4em;
+    width: 30%;
+}
+
+aside #contact-us-btn a{    
+    text-decoration: none;
+    color: black;
+}
+
+aside #contact-us-btn:hover {
+    background-color: rgb(25,202,253);
+    transition: 0.3s ease-in;
+}
+
+aside > a > img {
+    max-width: 100%; /* Prevents the image from exceeding the width of the aside */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes inline block spacing issues */
+    margin-left:0.2em;
 }
 
 /*---------------------- FOOTER ---------------------- */
 
 /* Styles the footer for every page */
 footer {
-    grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "footer-contact footer-partners footer-media";
+    grid-template-areas: "footer-contact footer-partners footer-media ";
     background: linear-gradient(90deg, rgba(17,17,17,1) 0%, rgb(28, 28, 28) 50%, rgba(17,17,17,1) 100%);
     font-family: "Rubik";
     font-weight: 80;
@@ -313,7 +407,11 @@ footer section {
 /* Styles the grid layout for the news section */
 #news {
     display: grid;
-    grid: "news news news news";
+    grid-template-columns: repeat(auto-fill, minmax(25em, auto));
+}
+
+#news h1 {
+    grid-column: 1 / -1;
 }
 
 /* Styles individual news article sections */
@@ -374,11 +472,15 @@ footer section {
     font-family: "Manjari";
 }
 
+#trust-us p {
+    font-size: 1em;
+}
+
 /* Styles the reviews container */
 #reviews {
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(20em, auto));
 }
 
 /* Styles individual review sections */
@@ -388,7 +490,6 @@ footer section {
     align-items: center;
     text-align: center;
     background-color: transparent;
-    width: 75%;
     margin: 2em;
     font-family: "Manjari";
     justify-self: center;
@@ -425,30 +526,18 @@ footer section {
 
 /* Styles the 'about-us' section for layout and alignment */
 #about-us {
-    display: grid;
-    grid: "intro intro"
-          "dimitris giannis";
-    width: 50%;
-    margin-top: 5em;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em, auto));
+    margin-top: 0.2em;
     margin-bottom: 2em;
 }
 
 /* Styles the div within 'about-us' for color, width, and padding */
-#about-us div {
-    grid-area: intro;
+#about-us >div {
+    grid-column: 1 / -1;
     color: white;
     padding: 1em;
     font-family: "Manjari";
-}
-
-/* Styles the Dimitris section within 'about-us' */
-#dimitris-info {
-    grid-area: dimitris;
-}
-
-/* Styles the Giannis section within 'about-us' */
-#giannis-info {
-    grid-area: giannis;
 }
 
 /* Underlines the h2 element within 'about-us' */
@@ -511,7 +600,7 @@ footer section {
 /* Styles the unordered list within the courses container */
 #courses-container > ul {
     display: grid;
-    grid: "course course course course";
+    grid-template-columns: repeat(auto-fill, minmax(20em, auto));
     list-style: none;
     padding: 0;
     margin: 0;
