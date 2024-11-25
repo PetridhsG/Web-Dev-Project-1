@@ -3,8 +3,8 @@
 <html lang="en">
     <head>
         <title>Learning Hub</title>
-        <link href="..\img\logos\logo-icon.png" rel="shortcut icon" type="image/png" />
-        <link href="..\style\style.css" rel="stylesheet" type="text/css">
+        <link href="../img/logos/logo-icon.png" rel="shortcut icon" type="image/png" />
+        <link href="../style/style.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         
@@ -12,9 +12,7 @@
 
     <body>
         <header>
-            
-                <a href="index.html"><img src="..\img\logos\header-logo.png" alt="Learning Hub"></a>  
-          
+            <a href="index.html"><img src="../img/logos/header-logo.png" alt="Learning Hub"></a>  
         </header>
 
         <nav>
@@ -43,7 +41,19 @@
                 <a href="mailto:contact@example.com">Contact</a>
             </div>
 
-            <a href="https://shorturl.at/bcZfm" target="_blank"><img src="..\img\coursera-ad.png"></a>  
+            
+            <a href="https://shorturl.at/bcZfm" target="_blank">
+                <img srcset="../img/responsive-img/mobile/coursera-ad.png 240w,
+                             ../img/responsive-img/tablet/coursera-ad.png 320w,
+                             ../img/responsive-img/desktop/coursera-ad.png 765w"
+                    sizes="100px,
+                    (min-width: 481px) and (max-width: 768px),
+                    (min-width: 769px)  
+                    " 
+                    src="../img/responsive-img/mobile/coursera-ad.png 240w"
+                    alt="AD"  
+                > 
+            </a>  
 
 
         </aside>
@@ -67,7 +77,7 @@
                 <h1>News</h1>
                 <article class ="news-article">
                     <a href="https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/" target="_blank">
-                        <img src="..\\img\news\chatgpt.png"  > 
+                        <img src="../img/news/chatgpt.png"  > 
                         <h3>Introducing GPT-4o and more tools to ChatGPT free users</h3>
                         <p>
                             GPT-4o is our newest flagship model that provides GPT-4-level intelligence but is
@@ -78,7 +88,7 @@
 
                 <article class ="news-article">
                     <a href="https://www.moneycontrol.com/technology/oracle-releases-latest-version-of-programming-language-java-23-article-12823976.html" target="_blank">
-                        <img src="..\\img\news\java.png"  > 
+                        <img src="../img/news/java.png"  > 
                         <h3>Oracle releases latest version of programming language Java 23 </h3>
                         <p>
                             The new update will have 12 enhancement proposals that help developers
@@ -89,7 +99,7 @@
 
                 <article class ="news-article">
                     <a href="https://www.efinancialcareers.com/news/can-becoming-a-c-expert-ruin-your-engineering-career" target="_blank">
-                        <img src="..\\img\news\cpp.png" >                        
+                        <img src="../img/news/cpp.png" >                        
                         <h3>Can becoming a C++ expert ruin your engineering career?</h3>
                         <p>
                             C++ veterans seem to believe learning C++ has crippled their career prospects.
@@ -100,7 +110,7 @@
 
                 <article class ="news-article">
                     <a href="https://www.unrealengine.com/en-US/blog/unreal-engine-5-5-is-now-available" target="_blank">
-                        <img src="..\\img\news\unreal.png"> 
+                        <img src="../img/news/unreal.png"> 
                         <h3>Unreal Engine 5.5 is now available worldwide</h3>
                         <p>
                             Check out the major enhancements to animation authoring, rendering, virtual production, 
@@ -126,7 +136,15 @@
             <section id="reviews">
 
                 <atricle class="review">
-                    <img src="..\\img\profile-pics\zuck.png">
+                    <img 
+                        srcset="../img/responsive-img/mobile/profile-pics/zuck.png 1x,
+                                ../img/responsive-img/tablet/profile-pics/zuck.png 1.5x,
+                                ../img/responsive-img/desktop/profile-pics/zuck.png 2x"
+                        sizes="(max-width: 480px) 100vw,
+                                (min-width: 481px) and (max-width: 768px) 50vw,
+                                (min-width: 769px) 33vw"
+                        src="../img/responsive-img/mobile/profile-pics/zuck.png"
+                        alt="Mark-pic">
                     <h3>Mark Zuckerberg</h3>
                     <h5>Co-Founder of Meta</h5>
                     <p>
@@ -141,7 +159,14 @@
                 </atricle>
 
                 <atricle class="review">
-                    <img src="..\\img\profile-pics\leon.png">
+                    <img srcset="../img/responsive-img/mobile/profile-pics/leon.png 240w,
+                                    ../img/responsive-img/tablet/profile-pics/leon.png 500w,
+                                    ../img/responsive-img/desktop/profile-pics/leon.png 765w"
+                                    sizes="(max-width: 480px) 45vw,
+                                            (min-width: 481px) and (max-width: 768px) 20vw,
+                                            10vw" 
+                                    src="../img/responsive-img/mobile/profile-pics/leon.png 240w"
+                                    alt="Leon-pic"  > 
                     <h3>Leon Yohai</h3>
                     <h5>Entrepreneur</h5>
                     <p>
@@ -156,7 +181,14 @@
                 </atricle>
 
                 <atricle class="review">
-                    <img src="..\\img\profile-pics\bill.png">
+                    <img srcset="../img/responsive-img/mobile/profile-pics/bill.png 240w,
+                                    ../img/responsive-img/tablet/profile-pics/bill.png 320w,
+                                    ../img/responsive-img/desktop/profile-pics/bill.png 765w"
+                                    sizes="(max-width: 480px) 45vw,
+                                            (min-width: 481px) and (max-width: 768px) 20vw,
+                                            10vw" 
+                                    src="../img/responsive-img/mobile/profile-pics/leon.png 240w"
+                                    alt="Bill-pic"  > 
                     <h3>Bill Gates</h3>
                     <h5>Co-Founder of Microsoft</h5>
                     <p>
@@ -181,11 +213,27 @@
                         <h3>Petridis Giannis</h3>
                         <p>
                             <a href="mailto:p3210167@aueb.gr">
-                                <img src="..\\img\logos\mail-logo.png"alt="MailLogo">
+                                <img srcset="../img/responsive-img/mobile/logos/mail-logo.png 240w,
+                                            ../img/responsive-img/tablet/logos/mail-logo.png 320w,
+                                            ../img/responsive-img/desktop/logos/mail-logo.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/mail-logo.png 240w"
+                                    alt="Mail-logo"  > 
                                 p3210167@aueb.gr
                             </a>
                             <a href="https://github.com/PetridhsG"> 
-                                <img src="..\\img\logos\github-logo.png"alt="Github Logo" >
+                                <img srcset="../img/responsive-img/mobile/logos/github-logo.png 240w,
+                                            ../img/responsive-img/tablet/logos/github-logo.png 320w,
+                                            ../img/responsive-img/desktop/logos/github-logo.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/github-logo.png 240w"
+                                    alt="Github-logo"  > 
                                 PetridhsG
                             </a>
                         </p>  
@@ -194,11 +242,27 @@
                         <h3>Kefalas Dimitris</h3>
                         <p>
                             <a href="mailto:p3210167@aueb.gr">
-                                <img src="..\\img\logos\mail-logo.png"alt="MailLogo" >
+                                <img srcset="../img/responsive-img/mobile/logos/mail-logo.png 240w,
+                                            ../img/responsive-img/tablet/logos/mail-logo.png 320w,
+                                            ../img/responsive-img/desktop/logos/mail-logo.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/mail-logo.png 240w"
+                                    alt="Mail-logo"  > 
                                 p3210075@aueb.gr
                             </a>
                             <a href="https://github.com/dimkef29"> 
-                                <img src="..\\img\logos\github-logo.png"alt="Github Logo" >
+                                <img srcset="../img/responsive-img/mobile/logos/github-logo.png 240w,
+                                            ../img/responsive-img/tablet/logos/github-logo.png 320w,
+                                            ../img/responsive-img/desktop/logos/github-logo.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/github-logo.png 240w"
+                                    alt="Github-logo"  > 
                                 dimkef29
                             </a>
                         </p>  
@@ -210,16 +274,48 @@
                 <h2>Partners</h2>
                 <div id="partners-logos">
                     <a href="https://www.aueb.gr/"  target="_blank"> 
-                        <img src="..\\img\partners\aueb.png">
+                        <img srcset="../img/responsive-img/mobile/partners/aueb.png 240w,
+                                    ../img/responsive-img/tablet/partners/aueb.png 320w,
+                                    ../img/responsive-img/desktop/partners/aueb.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/partners/aueb.png 240w"
+                                    alt="Aueb-logo"  > 
                     </a>
                     <a href="https://www.stanford.edu/" target="_blank">
-                        <img src="..\\img\partners\stanford.png">
+                        <img srcset="../img/responsive-img/mobile/partners/stanford.png 240w,
+                                    ../img/responsive-img/tablet/partners/stanford.png 320w,
+                                    ../img/responsive-img/desktop/partners/stanford.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/partners/stanford.png 240w"
+                                    alt="Stanford-logo"  > 
                     </a>
                     <a href="https://www.mit.edu/" target="_blank"> 
-                        <img src="..\\img\partners\mit.png">
+                        <img srcset="../img/responsive-img/mobile/partners/mit.png 240w,
+                                    ../img/responsive-img/tablet/partners/mit.png 320w,
+                                    ../img/responsive-img/desktop/partners/mit.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/partners/mit.png 240w"
+                                    alt="MIT-logo"  > 
                     </a>
                     <a href="https://ntua.gr/el/" target="_blank"> 
-                        <img src="..\\img\partners\emp.png">
+                        <img srcset="../img/responsive-img/mobile/partners/emp.png 240w,
+                                    ../img/responsive-img/tablet/partners/emp.png 320w,
+                                    ../img/responsive-img/desktop/partners/emp.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/partners/emp.png 240w"
+                                    alt="EMP-logo"  > 
                     </a>
                 </div>            
             </section>
@@ -228,19 +324,59 @@
                 <h2>Social Media</h2>
                 <div id="media-logos">
                     <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank">
-                        <img src="..\\img\logos\yt.png"alt="yt-logo">
+                        <img srcset="../img/responsive-img/mobile/logos/yt.png 240w,
+                                    ../img/responsive-img/tablet/logos/yt.png 320w,
+                                    ../img/responsive-img/desktop/logos/yt.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/yt.png 240w"
+                                    alt="YT-logo"  > 
                     </a>
                     <a href="https://x.com/" target="_blank"> 
-                        <img src="..\\img\logos\x.png"alt="x-logo" >
+                        <img srcset="../img/responsive-img/mobile/logos/x.png 240w,
+                                    ../img/responsive-img/tablet/logos/x.png 320w,
+                                    ../img/responsive-img/desktop/logos/x.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/x.png 240w"
+                                    alt="X-logo"  > 
                     </a>
                     <a href="https://www.instagram.com/" target="_blank"> 
-                        <img src="..\\img\logos\insta.png"alt="insta-logo" >
+                        <img srcset="../img/responsive-img/mobile/logos/insta.png 240w,
+                                    ../img/responsive-img/tablet/logos/insta.png 320w,
+                                    ../img/responsive-img/desktop/logos/insta.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/insta.png 240w"
+                                    alt="Insta-logo"  > 
                     </a>
                     <a href="https://www.facebook.com/" target="_blank"> 
-                        <img src="..\\img\logos\fb.png"alt="fb-logo" >
+                        <img srcset="../img/responsive-img/mobile/logos/fb.png 240w,
+                                    ../img/responsive-img/tablet/logos/fb.png 320w,
+                                    ../img/responsive-img/desktop/logos/fb.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/fb.png 240w"
+                                    alt="Fb-logo"  > 
                     </a>
                     <a href="https://discord.com/" target="_blank"> 
-                        <img src="..\\img\logos\disc.png"alt="disc-logo" >
+                        <img srcset="../img/responsive-img/mobile/logos/disc.png 240w,
+                                    ../img/responsive-img/tablet/logos/disc.png 320w,
+                                    ../img/responsive-img/desktop/logos/disc.png 765w"
+                                    sizes="100px,
+                                    (min-width: 481px) and (max-width: 768px),
+                                    (min-width: 769px)  
+                                    " 
+                                    src="../img/responsive-img/mobile/logos/disc.png 240w"
+                                    alt="Discord-logo"  >
                     </a>    
                 </div>     
                 <h5>&#169;2024, AUEB Project. All Rights Reserved.</h5>

@@ -55,6 +55,11 @@ h1::before, h1::after {
     color: rgb(25, 202, 253);
 }
 
+img{
+    max-width:100%;
+    
+}
+
 /*---------------------- HEADER ---------------------- */
 
 /* Styles the header for every page */
@@ -67,7 +72,7 @@ header {
 
 /* Styles the logo image within the header */ 
 header img { /*--- image-tbc ---*/
-    width: 20em;
+    
     padding: 0.4em 0em 0.2em 1em;
 }
 
@@ -196,7 +201,7 @@ aside #contact-us-btn:hover {
 
 /* Styles images inside links within the aside */
 aside > a > img { /*--- image-tbc ---*/
-    width: 80%;
+    width:10em;
 }
 
 /*---------------------- FOOTER ---------------------- */
@@ -272,7 +277,7 @@ footer p {
 /* Styles images inside contact links */
 #contact a img { /*--- image-tbc ---*/
     vertical-align: middle;
-    width: 1.8em;
+ 
     margin-right: 0.3em;
 }
 
@@ -284,7 +289,7 @@ footer p {
 
 /* Styles partner images for size and margin */
 #partners img { /*--- image-tbc ---*/
-    width: 5em;
+   
     margin: 0.4em;
     transition: 0.4s;
 }
@@ -315,13 +320,13 @@ footer p {
 
 /* Styles social media images */
 #social-media img { /*--- image-tbc ---*/
-    width: 2em;
+   
     margin: 0.2em;
     transition: 0.4s;
 }
 
 /* Adds scaling effect on hover for social media images */
-#social-media img:hover { /*--- image-tbc ---*/
+#social-media img:hover { 
     transform: scale(1.2);
     transition: 0.4s;
 }
@@ -393,7 +398,7 @@ footer p {
 
 /* Styles the images in news articles */
 .news-article img { /*--- image-tbc ---*/
-    width: 20em;
+ 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom: 1px solid black;
@@ -510,7 +515,7 @@ footer p {
 
 /* Styles images within the 'about-us' section for consistent width */
 #about-us img { /*--- image-tbc ---*/
-    width: 10em;
+    
 }
 
 /* Styles general paragraphs in 'about-us' for text alignment and line spacing */
@@ -528,7 +533,7 @@ footer p {
 
 /* Configures images within the courses container */
 #courses-container img {  /*--- image-tbc ---*/
-    width: 15em;
+   
     transition: 0.4s;
     opacity: 0.5;
 }
@@ -644,7 +649,7 @@ footer p {
 
 /* Styles images within the book-lecture-items */
 .book-lecture-item img { /*--- image-tbc ---*/
-    width: 10em;
+   
     margin: 1em;
     border: 3px solid rgb(25,202,253);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
@@ -912,6 +917,61 @@ footer p {
     #contact #contact-info .contact-info-item {
         margin:1em;
     }
+
+    header img { /*--- image-tbc ---*/
+
+    }
+
+    /* Styles images inside links within the aside */
+    aside > a > img { /*--- image-tbc ---*/
+        
+    }
+
+        /* Styles images inside contact links */
+    #contact a img { /*--- image-tbc ---*/
+ 
+    }
+
+        /* Styles partner images for size and margin */
+    #partners img { /*--- image-tbc ---*/
+   
+    }
+
+    .review img { /*--- image-tbc ---*/
+    
+    }
+    
+    /* Styles the images in news articles */
+    .news-article img { /*--- image-tbc ---*/
+    
+    }
+    
+    
+    /* Styles images within the 'about-us' section for consistent width */
+    #about-us img { /*--- image-tbc ---*/
+        
+    }
+    
+    /* Configures images within the courses container */
+    #courses-container img {  /*--- image-tbc ---*/
+   
+    }
+    
+    /* Styles images within the book-lecture-items */
+    .book-lecture-item img { /*--- image-tbc ---*/
+      
+    }
+    
+    /* Styles images in figure inside book-lecture-chapter parent */
+    .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+      
+    }
+    
+    /* Styles iframe elements inside book-lecture-chapter parent */
+    .book-lecture-chapter iframe {   /*--- image-tbc ---*/
+        
+    }
+
 }
 
 
@@ -1031,6 +1091,60 @@ footer p {
     /* Social media heading style: adds margin to the right */
     #social-media h5 {
         margin-right: 2em;
+    }
+
+    header img { /*--- image-tbc ---*/
+
+    }
+
+    /* Styles images inside links within the aside */
+    aside > a > img { /*--- image-tbc ---*/
+        
+    }
+
+        /* Styles images inside contact links */
+    #contact a img { /*--- image-tbc ---*/
+ 
+    }
+
+        /* Styles partner images for size and margin */
+    #partners img { /*--- image-tbc ---*/
+   
+    }
+
+    .review img { /*--- image-tbc ---*/
+    
+    }
+    
+    /* Styles the images in news articles */
+    .news-article img { /*--- image-tbc ---*/
+    
+    }
+    
+    
+    /* Styles images within the 'about-us' section for consistent width */
+    #about-us img { /*--- image-tbc ---*/
+        
+    }
+    
+    /* Configures images within the courses container */
+    #courses-container img {  /*--- image-tbc ---*/
+   
+    }
+    
+    /* Styles images within the book-lecture-items */
+    .book-lecture-item img { /*--- image-tbc ---*/
+      
+    }
+    
+    /* Styles images in figure inside book-lecture-chapter parent */
+    .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+      
+    }
+    
+    /* Styles iframe elements inside book-lecture-chapter parent */
+    .book-lecture-chapter iframe {   /*--- image-tbc ---*/
+        
     }
 
 }
