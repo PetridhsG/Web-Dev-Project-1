@@ -55,11 +55,6 @@ h1::before, h1::after {
     color: rgb(25, 202, 253);
 }
 
-img{
-    max-width:100%;
-    
-}
-
 /*---------------------- HEADER ---------------------- */
 
 /* Styles the header for every page */
@@ -71,8 +66,8 @@ header {
 }
 
 /* Styles the logo image within the header */ 
-header img { /*--- image-tbc ---*/
-    
+header img { 
+    width: 20em;
     padding: 0.4em 0em 0.2em 1em;
 }
 
@@ -145,24 +140,24 @@ aside > form > label {
 
 /* Styles input fields inside the form within the aside */
 aside > form > input {
-    font-family: "Varela Round";
     width: fit-content;
     padding: 0.2em;
     margin-top: 0.4em;
     border: 1px solid transparent;
     border-radius: 10px;
+    font-family: "Varela Round";
     font-size: 0.8em;
 }
 
 /* Styles the buttons inside the aside */
 aside > button {
-    font-family: "Varela Round";
     margin: 0.8em;
     padding: 0.5em;
     background-color: #f5f5dc;
     color: black;
     border: none;
     border-radius: 20px;
+    font-family: "Varela Round";
     font-size: 0.8em;
     cursor: pointer;
 }
@@ -202,7 +197,8 @@ aside #contact-us-btn:hover {
 }
 
 /* Styles images inside links within the aside */
-aside > a > img { /*--- image-tbc ---*/
+aside > a > img {
+    margin-top:1em;
     width:10em;
 }
 
@@ -217,6 +213,10 @@ footer {
     font-family: "Rubik";
     color: #ffffff;
     text-align: center;
+}
+
+footer img { 
+    max-width:100%;
 }
 
 /* Styles the h2 element within the footer */
@@ -277,9 +277,9 @@ footer p {
 }
 
 /* Styles images inside contact links */
-#contact a img { /*--- image-tbc ---*/
+#contact a img { 
+    width:2.5em;
     vertical-align: middle;
- 
     margin-right: 0.3em;
 }
 
@@ -290,8 +290,8 @@ footer p {
 }
 
 /* Styles partner images for size and margin */
-#partners img { /*--- image-tbc ---*/
-   
+#partners img { 
+    width:4em;
     margin: 0.4em;
     transition: 0.4s;
 }
@@ -321,8 +321,8 @@ footer p {
 }
 
 /* Styles social media images */
-#social-media img { /*--- image-tbc ---*/
-   
+#social-media img { 
+    width:2em;
     margin: 0.2em;
     transition: 0.4s;
 }
@@ -399,8 +399,8 @@ footer p {
 }
 
 /* Styles the images in news articles */
-.news-article img { /*--- image-tbc ---*/
- 
+.news-article img {
+    width:20em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom: 1px solid black;
@@ -444,7 +444,7 @@ footer p {
 }
 
 /* Styles images within reviews */
-.review img { /*--- image-tbc ---*/
+.review img { 
     margin-bottom: 1em;
     width: 10em;
     border-radius: 100%;
@@ -516,8 +516,8 @@ footer p {
 }
 
 /* Styles images within the 'about-us' section for consistent width */
-#about-us img { /*--- image-tbc ---*/
-    
+#about-us img { 
+    width:10em;
 }
 
 /* Styles general paragraphs in 'about-us' for text alignment and line spacing */
@@ -534,8 +534,8 @@ footer p {
 }
 
 /* Configures images within the courses container */
-#courses-container img {  /*--- image-tbc ---*/
-   
+#courses-container img {  
+    width:15em;
     transition: 0.4s;
     opacity: 0.5;
 }
@@ -561,7 +561,7 @@ footer p {
     justify-self: center;
     margin: 1em;
     padding: 0;
-    width: 50%;
+    width: 65%;
     position: relative;
 }
 
@@ -650,8 +650,8 @@ footer p {
 }
 
 /* Styles images within the book-lecture-items */
-.book-lecture-item img { /*--- image-tbc ---*/
-   
+.book-lecture-item img { 
+    width: 20em;
     margin: 1em;
     border: 3px solid rgb(25,202,253);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
@@ -835,6 +835,7 @@ footer p {
 
 /* Styles images in figure inside book-lecture-chapter parent */
 .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+    width:15em;
     border: 2px solid rgb(25,202,253);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -848,15 +849,15 @@ footer p {
 .book-lecture-chapter iframe {   /*--- image-tbc ---*/
     margin: 1em;
     padding: 0;
-    width: 25em;
-    height: 12.5em;
+    width: 20em;
+    height: 10em;
     box-sizing: border-box;
     border: 2px solid rgb(25,202,253);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*---------------------- TABLET ----------------------*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 683px) and (max-width: 1020px) {
 
     /* Make all elements in the body span the full width */
     body > * {
@@ -920,65 +921,22 @@ footer p {
         margin:1em;
     }
 
-    header img { /*--- image-tbc ---*/
-
-    }
-
-    /* Styles images inside links within the aside */
-    aside > a > img { /*--- image-tbc ---*/
-        
-    }
-
-        /* Styles images inside contact links */
-    #contact a img { /*--- image-tbc ---*/
- 
-    }
-
-        /* Styles partner images for size and margin */
-    #partners img { /*--- image-tbc ---*/
-   
-    }
-
-    .review img { /*--- image-tbc ---*/
-    
-    }
-    
-    /* Styles the images in news articles */
-    .news-article img { /*--- image-tbc ---*/
-    
-    }
-    
-    
-    /* Styles images within the 'about-us' section for consistent width */
-    #about-us img { /*--- image-tbc ---*/
-        
-    }
-    
-    /* Configures images within the courses container */
-    #courses-container img {  /*--- image-tbc ---*/
-   
-    }
-    
-    /* Styles images within the book-lecture-items */
-    .book-lecture-item img { /*--- image-tbc ---*/
-      
-    }
-    
     /* Styles images in figure inside book-lecture-chapter parent */
     .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
-      
+        width: 30em;
     }
     
     /* Styles iframe elements inside book-lecture-chapter parent */
     .book-lecture-chapter iframe {   /*--- image-tbc ---*/
-        
+        width: 30em;
+        height: 15em;
     }
 
 }
 
 
 /*---------------------- DESKTOP ----------------------*/
-@media (min-width: 769px) {
+@media (min-width: 1020px) {
     /* Make all elements in the body span the full grid width */
     body > * {
         grid-column: 1 /13;
@@ -1095,78 +1053,43 @@ footer p {
         margin-right: 2em;
     }
 
-    header img { /*--- image-tbc ---*/
-
+    #partners a img { 
+        width:6em;
     }
 
-    /* Styles images inside links within the aside */
-    aside > a > img { /*--- image-tbc ---*/
-        
-    }
-
-        /* Styles images inside contact links */
-    #contact a img { /*--- image-tbc ---*/
- 
-    }
-
-        /* Styles partner images for size and margin */
-    #partners img { /*--- image-tbc ---*/
-   
-    }
-
-    .review img { /*--- image-tbc ---*/
-    
-    }
-    
-    /* Styles the images in news articles */
-    .news-article img { /*--- image-tbc ---*/
-    
-    }
-    
-    
-    /* Styles images within the 'about-us' section for consistent width */
-    #about-us img { /*--- image-tbc ---*/
-        
-    }
-    
-    /* Configures images within the courses container */
-    #courses-container img {  /*--- image-tbc ---*/
-   
-    }
-    
-    /* Styles images within the book-lecture-items */
-    .book-lecture-item img { /*--- image-tbc ---*/
-      
-    }
-    
     /* Styles images in figure inside book-lecture-chapter parent */
     .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
-      
+        width: 40em;
     }
     
     /* Styles iframe elements inside book-lecture-chapter parent */
     .book-lecture-chapter iframe {   /*--- image-tbc ---*/
-        
+        width: 40em;
+        height: 20em;
     }
 
 }
 
-
+/* General styles for the sign-up form */
 #sign-up-form {
     font-family: "Manjari";
     color: white;
 }
 
+/* Styles the legend inside the form */
 #sign-up-form legend {
     color: rgb(25,202,253);
     text-align: center;
     font-size: 1.15em;
+    font-weight: bold;
 }
 
-#sign-up-form input,#sign-up-form textarea, #sign-up-form select {
+/* Ensures inputs, textarea, and select elements use the same font */
+#sign-up-form input, #sign-up-form textarea, #sign-up-form select {
     font-family: "Manjari";
 }
 
+/* Styles for fieldset element inside the form */
 #sign-up-form fieldset {
     display: flex;
     flex-direction: column;
@@ -1179,37 +1102,36 @@ footer p {
     border-image: initial;
 }
 
-/* Radio button and label styling */
+/* Styles for radio options inside the form */
 .radio-option {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Ensures radio button and label align vertically */
-    justify-content: flex-end; /* Aligns content to the left */
-    width: 100%; /* Ensures full width for proper stacking */
-  
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
     margin-bottom: 0.4em;
 }
 
+/* Adjusts the size of radio input buttons */
 .radio-option input {
     width: 1px;
 }
 
+/* Styles labels for radio buttons */
 .radio-option label {
-    display:flex;
+    display: flex;
     font-size: 1em;
     color: white;
-    line-height: 1; /* Keeps alignment consistent */
+    line-height: 1;
 }
 
-#sign-up-form legend {
-    font-weight: bold;
-}
-
+/* General label styling in the form */
 #sign-up-form label {
     display: block;
     margin-top: 0.5em;
 }
 
+/* Styles inputs, select, and textarea elements */
 #sign-up-form input, #sign-up-form select, #sign-up-form textarea {
     width: 25em;
     padding: 0.5em;
@@ -1218,6 +1140,7 @@ footer p {
     border-radius: 4px;
 }
 
+/* Styles the submit button */
 #sign-up-form button {
     width: 15em;
     padding: 0.5em;
@@ -1230,10 +1153,23 @@ footer p {
     cursor: pointer;
 }
 
-#sign-up-form input[type="checkbox"]{
+/* Adjusts checkbox input size */
+#sign-up-form input[type="checkbox"] {
     width: auto;
 }
 
+/* Changes button color on hover */
 #sign-up-form button:hover {
     background-color: rgb(25, 202, 253);
-    transition: 0.3s ease-in;}
+    transition: 0.3s ease-in;
+}
+
+/* Highlights invalid inputs with a red border */
+#sign-up-form input:invalid {
+    border: 2px solid red;
+}
+
+/* Highlights valid inputs with a green border */
+#sign-up-form input:valid {
+    border: 2px solid green;
+}

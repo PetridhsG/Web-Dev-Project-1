@@ -55,11 +55,6 @@ h1::before, h1::after {
     color: rgb(25, 202, 253);
 }
 
-img{
-    max-width:100%;
-    
-}
-
 /*---------------------- HEADER ---------------------- */
 
 /* Styles the header for every page */
@@ -71,8 +66,8 @@ header {
 }
 
 /* Styles the logo image within the header */ 
-header img { /*--- image-tbc ---*/
-    
+header img { 
+    width: 20em;
     padding: 0.4em 0em 0.2em 1em;
 }
 
@@ -150,6 +145,7 @@ aside > form > input {
     margin-top: 0.4em;
     border: 1px solid transparent;
     border-radius: 10px;
+    font-family: "Varela Round";
     font-size: 0.8em;
 }
 
@@ -161,6 +157,7 @@ aside > button {
     color: black;
     border: none;
     border-radius: 20px;
+    font-family: "Varela Round";
     font-size: 0.8em;
     cursor: pointer;
 }
@@ -200,7 +197,8 @@ aside #contact-us-btn:hover {
 }
 
 /* Styles images inside links within the aside */
-aside > a > img { /*--- image-tbc ---*/
+aside > a > img {
+    margin-top:1em;
     width:10em;
 }
 
@@ -215,6 +213,10 @@ footer {
     font-family: "Rubik";
     color: #ffffff;
     text-align: center;
+}
+
+footer img { 
+    max-width:100%;
 }
 
 /* Styles the h2 element within the footer */
@@ -275,9 +277,9 @@ footer p {
 }
 
 /* Styles images inside contact links */
-#contact a img { /*--- image-tbc ---*/
+#contact a img { 
+    width:2.5em;
     vertical-align: middle;
- 
     margin-right: 0.3em;
 }
 
@@ -288,8 +290,8 @@ footer p {
 }
 
 /* Styles partner images for size and margin */
-#partners img { /*--- image-tbc ---*/
-   
+#partners img { 
+    width:4em;
     margin: 0.4em;
     transition: 0.4s;
 }
@@ -319,8 +321,8 @@ footer p {
 }
 
 /* Styles social media images */
-#social-media img { /*--- image-tbc ---*/
-   
+#social-media img { 
+    width:2em;
     margin: 0.2em;
     transition: 0.4s;
 }
@@ -397,8 +399,8 @@ footer p {
 }
 
 /* Styles the images in news articles */
-.news-article img { /*--- image-tbc ---*/
- 
+.news-article img {
+    width:20em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom: 1px solid black;
@@ -442,7 +444,7 @@ footer p {
 }
 
 /* Styles images within reviews */
-.review img { /*--- image-tbc ---*/
+.review img { 
     margin-bottom: 1em;
     width: 10em;
     border-radius: 100%;
@@ -514,8 +516,8 @@ footer p {
 }
 
 /* Styles images within the 'about-us' section for consistent width */
-#about-us img { /*--- image-tbc ---*/
-    
+#about-us img { 
+    width:10em;
 }
 
 /* Styles general paragraphs in 'about-us' for text alignment and line spacing */
@@ -532,8 +534,8 @@ footer p {
 }
 
 /* Configures images within the courses container */
-#courses-container img {  /*--- image-tbc ---*/
-   
+#courses-container img {  
+    width:15em;
     transition: 0.4s;
     opacity: 0.5;
 }
@@ -559,7 +561,7 @@ footer p {
     justify-self: center;
     margin: 1em;
     padding: 0;
-    width: 50%;
+    width: 65%;
     position: relative;
 }
 
@@ -648,8 +650,8 @@ footer p {
 }
 
 /* Styles images within the book-lecture-items */
-.book-lecture-item img { /*--- image-tbc ---*/
-   
+.book-lecture-item img { 
+    width: 20em;
     margin: 1em;
     border: 3px solid rgb(25,202,253);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.5);
@@ -833,6 +835,7 @@ footer p {
 
 /* Styles images in figure inside book-lecture-chapter parent */
 .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
+    width:15em;
     border: 2px solid rgb(25,202,253);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -846,15 +849,15 @@ footer p {
 .book-lecture-chapter iframe {   /*--- image-tbc ---*/
     margin: 1em;
     padding: 0;
-    width: 25em;
-    height: 12.5em;
+    width: 20em;
+    height: 10em;
     box-sizing: border-box;
     border: 2px solid rgb(25,202,253);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /*---------------------- TABLET ----------------------*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 683px) and (max-width: 1020px) {
 
     /* Make all elements in the body span the full width */
     body > * {
@@ -918,65 +921,22 @@ footer p {
         margin:1em;
     }
 
-    header img { /*--- image-tbc ---*/
-
-    }
-
-    /* Styles images inside links within the aside */
-    aside > a > img { /*--- image-tbc ---*/
-        
-    }
-
-        /* Styles images inside contact links */
-    #contact a img { /*--- image-tbc ---*/
- 
-    }
-
-        /* Styles partner images for size and margin */
-    #partners img { /*--- image-tbc ---*/
-   
-    }
-
-    .review img { /*--- image-tbc ---*/
-    
-    }
-    
-    /* Styles the images in news articles */
-    .news-article img { /*--- image-tbc ---*/
-    
-    }
-    
-    
-    /* Styles images within the 'about-us' section for consistent width */
-    #about-us img { /*--- image-tbc ---*/
-        
-    }
-    
-    /* Configures images within the courses container */
-    #courses-container img {  /*--- image-tbc ---*/
-   
-    }
-    
-    /* Styles images within the book-lecture-items */
-    .book-lecture-item img { /*--- image-tbc ---*/
-      
-    }
-    
     /* Styles images in figure inside book-lecture-chapter parent */
     .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
-      
+        width: 30em;
     }
     
     /* Styles iframe elements inside book-lecture-chapter parent */
     .book-lecture-chapter iframe {   /*--- image-tbc ---*/
-        
+        width: 30em;
+        height: 15em;
     }
 
 }
 
 
 /*---------------------- DESKTOP ----------------------*/
-@media (min-width: 769px) {
+@media (min-width: 1020px) {
     /* Make all elements in the body span the full grid width */
     body > * {
         grid-column: 1 /13;
@@ -1093,58 +1053,19 @@ footer p {
         margin-right: 2em;
     }
 
-    header img { /*--- image-tbc ---*/
-
+    #partners a img { 
+        width:6em;
     }
 
-    /* Styles images inside links within the aside */
-    aside > a > img { /*--- image-tbc ---*/
-        
-    }
-
-        /* Styles images inside contact links */
-    #contact a img { /*--- image-tbc ---*/
- 
-    }
-
-        /* Styles partner images for size and margin */
-    #partners img { /*--- image-tbc ---*/
-   
-    }
-
-    .review img { /*--- image-tbc ---*/
-    
-    }
-    
-    /* Styles the images in news articles */
-    .news-article img { /*--- image-tbc ---*/
-    
-    }
-    
-    
-    /* Styles images within the 'about-us' section for consistent width */
-    #about-us img { /*--- image-tbc ---*/
-        
-    }
-    
-    /* Configures images within the courses container */
-    #courses-container img {  /*--- image-tbc ---*/
-   
-    }
-    
-    /* Styles images within the book-lecture-items */
-    .book-lecture-item img { /*--- image-tbc ---*/
-      
-    }
-    
     /* Styles images in figure inside book-lecture-chapter parent */
     .book-lecture-chapter > figure > img {  /*--- image-tbc ---*/
-      
+        width: 40em;
     }
     
     /* Styles iframe elements inside book-lecture-chapter parent */
     .book-lecture-chapter iframe {   /*--- image-tbc ---*/
-        
+        width: 40em;
+        height: 20em;
     }
 
 }

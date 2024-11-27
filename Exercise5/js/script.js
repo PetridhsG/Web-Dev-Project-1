@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const confirm_password = document.getElementById("confirm_password");
     confirm_password.addEventListener("input" , () => { 
         confirm_password.setCustomValidity(
-            confirm_password === password ? "" : "Passwords don't match."
+            confirm_password.value === password.value ? "" : "Passwords don't match."
         );  
     })
 
